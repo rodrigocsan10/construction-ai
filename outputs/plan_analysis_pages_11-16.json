@@ -1,0 +1,392 @@
+{
+  "_source_pdf": "/Users/rodrigo/construction-ai/data/Plans_AR.pdf",
+  "_pages_analyzed": "11-16",
+  "_total_pages_in_file": 22,
+  "project": {
+    "name": "MT. ARLINGTON BUILDING 2",
+    "type": "multifamily",
+    "total_sf": 0,
+    "floors": 6,
+    "scale": "1/8\" = 1'-0\"",
+    "scale_verified": true
+  },
+  "wall_types": [
+    {
+      "tag": "EW1",
+      "stud_size": "6\" metal",
+      "spacing_inches": 24,
+      "side_a": {
+        "board": "5/8\" type-X gypsum board",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "full bed split face masonry veneer",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "2\" polyiso rigid + R-21 paper faced batt",
+        "r_value": "R-31 (approx)"
+      },
+      "fire_rated": {
+        "rated": true,
+        "rating": "1-hour"
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW2",
+      "stud_size": "6\" metal",
+      "spacing_inches": 24,
+      "side_a": {
+        "board": "5/8\" type-X gypsum board",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "thin stone veneer",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "2\" polyiso rigid + R-21 paper faced batt",
+        "r_value": "R-31 (approx)"
+      },
+      "fire_rated": {
+        "rated": true,
+        "rating": "1-hour"
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW3",
+      "stud_size": "2x6 wood",
+      "spacing_inches": 16,
+      "side_a": {
+        "board": "5/8\" type-X gypsum board",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "thin stone veneer",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "R-21 paper faced batt",
+        "r_value": "R-21"
+      },
+      "fire_rated": {
+        "rated": true,
+        "rating": "1-hour"
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW3.1",
+      "stud_size": "2x6 wood",
+      "spacing_inches": 16,
+      "side_a": {
+        "board": "5/8\" gypsum board",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "thin stone veneer",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "R-21 paper faced batt",
+        "r_value": "R-21"
+      },
+      "fire_rated": {
+        "rated": false,
+        "rating": ""
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW4",
+      "stud_size": "2x6 wood",
+      "spacing_inches": 16,
+      "side_a": {
+        "board": "5/8\" type-X gypsum board",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "fiber cement lap siding",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "R-21 batt + 1-1/2\" ZIP R-sheathing (R-6.6)",
+        "r_value": "R-27+"
+      },
+      "fire_rated": {
+        "rated": true,
+        "rating": "1-hour"
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW4.1",
+      "stud_size": "2x6 wood",
+      "spacing_inches": 16,
+      "side_a": {
+        "board": "5/8\" gypsum board",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "fiber cement lap siding",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "R-21 batt + 1-1/2\" ZIP R-sheathing (R-6.6)",
+        "r_value": "R-27+"
+      },
+      "fire_rated": {
+        "rated": false,
+        "rating": ""
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW5",
+      "stud_size": "2x6 wood",
+      "spacing_inches": 16,
+      "side_a": {
+        "board": "5/8\" type-X gypsum board",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "fiber cement panels",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "R-21 batt + 1-1/2\" ZIP R-sheathing (R-6.6)",
+        "r_value": "R-27+"
+      },
+      "fire_rated": {
+        "rated": true,
+        "rating": "1-hour"
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW5.1",
+      "stud_size": "2x6 wood",
+      "spacing_inches": 16,
+      "side_a": {
+        "board": "5/8\" gypsum board",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "fiber cement panels",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "R-21 batt + 1-1/2\" ZIP R-sheathing (R-6.6)",
+        "r_value": "R-27+"
+      },
+      "fire_rated": {
+        "rated": false,
+        "rating": ""
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW6",
+      "stud_size": "8\" CMU",
+      "spacing_inches": 0,
+      "side_a": {
+        "board": "thin stone veneer",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "CMU",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "2-1/2\" polyiso rigid",
+        "r_value": "R-13.3"
+      },
+      "fire_rated": {
+        "rated": false,
+        "rating": ""
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW7",
+      "stud_size": "8\" CMU",
+      "spacing_inches": 0,
+      "side_a": {
+        "board": "fiber cement siding",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "CMU",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "2-1/2\" polyiso rigid",
+        "r_value": "R-13.3"
+      },
+      "fire_rated": {
+        "rated": false,
+        "rating": ""
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW8",
+      "stud_size": "concrete",
+      "spacing_inches": 0,
+      "side_a": {
+        "board": "full bed split face masonry veneer",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "concrete",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "2-1/2\" polyiso rigid",
+        "r_value": "R-13.3"
+      },
+      "fire_rated": {
+        "rated": false,
+        "rating": ""
+      },
+      "location": "exterior"
+    },
+    {
+      "tag": "EW9",
+      "stud_size": "concrete",
+      "spacing_inches": 0,
+      "side_a": {
+        "board": "thin stone veneer",
+        "layers": 1
+      },
+      "side_b": {
+        "board": "concrete",
+        "layers": 1
+      },
+      "insulation": {
+        "required": true,
+        "type": "2-1/2\" polyiso rigid",
+        "r_value": "R-13.3"
+      },
+      "fire_rated": {
+        "rated": false,
+        "rating": ""
+      },
+      "location": "exterior"
+    }
+  ],
+  "doors": [
+    {
+      "tag": "D",
+      "size": "3'-0\" x 7'-0\"",
+      "type": "interior",
+      "brand": "",
+      "count": 80
+    },
+    {
+      "tag": "A",
+      "size": "3'-0\" x 7'-0\"",
+      "type": "exterior/hm",
+      "brand": "",
+      "count": 25
+    },
+    {
+      "tag": "C",
+      "size": "3'-0\" x 7'-0\"",
+      "type": "hm stair",
+      "brand": "",
+      "count": 10
+    },
+    {
+      "tag": "BB",
+      "size": "6'-0\" x 7'-0\"",
+      "type": "glass",
+      "brand": "",
+      "count": 3
+    },
+    {
+      "tag": "E",
+      "size": "3'-6\" x 6'-8\"",
+      "type": "wood barn/slider",
+      "brand": "",
+      "count": 3
+    },
+    {
+      "tag": "FF",
+      "size": "5'-0\" x 6'-8\"",
+      "type": "wood-slider",
+      "brand": "",
+      "count": 2
+    },
+    {
+      "tag": "G",
+      "size": "2'-2\" x 4'-10\"",
+      "type": "metal access",
+      "brand": "",
+      "count": 15
+    },
+    {
+      "tag": "H",
+      "size": "3'-0\" x 7'-3\"",
+      "type": "aluminum",
+      "brand": "",
+      "count": 4
+    }
+  ],
+  "windows": [
+    {
+      "tag": "6",
+      "size": "not specified",
+      "type": "composite/fiberglass",
+      "brand": "Andersen 100 Series",
+      "count": 0
+    }
+  ],
+  "structural": {
+    "hardware_brand": "",
+    "fastener_specs": "",
+    "shear_walls": "Concrete shear wall, see structural",
+    "beams_and_posts": [],
+    "floor_system": {
+      "type": "concrete podium with wood truss framing above",
+      "spacing": "",
+      "notes": ""
+    },
+    "roof_system": {
+      "type": "trusses",
+      "notes": ""
+    },
+    "subfloor": {
+      "type": "Not specified",
+      "fastener": ""
+    }
+  },
+  "sheathing": {
+    "type": "ZIP (for some walls), gypsum sheathing, polyiso rigid, CMU",
+    "zip_tape_required": true,
+    "notes": "ZIP sheathing for Rated Assemblies EW4, EW5 and similar; tape and roller are required for all ZIP joints"
+  },
+  "finishes": {
+    "drywall_finish_level": 0,
+    "special_notes": "GYP-1, GYP-2, GYP-3 calls for 5/8\" type X gypsum with paint finish"
+  },
+  "general_notes": {
+    "weather_barrier": "Integral with ZIP or separate air/moisture barrier for other wall types (noted at each wall assembly)",
+    "fire_blocking": "",
+    "special_blocking": "",
+    "other_notes": "All penetrations/flashing for ZIP must use ZIP tape and liquid flash at fasteners and penetrations; Andersen windows specified; standing seam metal and TPO roof systems."
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "project": {
+    "floors": 6,
+    "name": "MT. ARLINGTON BUILDING 2",
+    "scale": "1/8\" = 1'-0\" (overall plans), 1/4\" = 1'-0\" (enlarged plans)",
+    "scale_verified": true,
+    "total_sf": 0,
+    "type": "multifamily"
+  },
+  "source_takeoff": "/Users/rodrigo/construction-ai/outputs/takeoff_framing.json",
+  "pricing": {
+    "inputs": {
+      "material_markup_percent": 11.0,
+      "sales_tax_percent": 6.625,
+      "tax_exempt": false,
+      "scope_labor_and_material": true,
+      "round_trip_miles": 80.0,
+      "working_days": 60,
+      "building_sf_used": 55000.0,
+      "building_sf_source": "cli",
+      "labor_dollars_per_building_sf": 2.75,
+      "labor_rate_rule": "commercial_multifamily",
+      "roof_labor_tier": "truss_engineered"
+    },
+    "material": {
+      "raw_subtotal": 12070.0,
+      "sales_tax_on_materials": 799.64,
+      "after_tax": 12869.64,
+      "markup_dollars": 1415.66,
+      "material_to_client": 14285.3
+    },
+    "labor_framing_est": {
+      "subtotal": 151250.0,
+      "note": "LF-based labor not modeled \u2014 $/building SF from framing_unit_costs.json; roof tier from takeoff floor_roof_estimating"
+    },
+    "blockout_crew": {
+      "usd": 20250.0,
+      "applied": true,
+      "crew_equivalent": 2.5,
+      "days": 30,
+      "hourly": 30.0,
+      "hours_per_day": 9.0,
+      "note": "KB: blockout \u2248 half of framing duration"
+    },
+    "equipment_allowance": {
+      "usd": 10000.0,
+      "applied": true,
+      "months": 2.0,
+      "monthly_rate": 5000.0,
+      "note": "Primary aerial/monthly allowance \u2014 calibrate to rental quote"
+    },
+    "mobilization": 2400.0,
+    "overhead_usd": 19818.53,
+    "profit_usd": 21800.38,
+    "grand_total_client": 239804.21,
+    "priced_supplier_lines": [
+      {
+        "category": "prefab_engineered",
+        "item": "Truss / TJI / engineered floor package \u2014 formal supplier quote required",
+        "quantity": 1,
+        "unit": "LOT",
+        "notes": "Attach plans; KB: do not self-price trusses without shop drawings",
+        "unit_cost_usd": 0.0,
+        "pricing_rule": "keyword:Truss / TJI",
+        "extension_usd": 0.0
+      },
+      {
+        "category": "fasteners",
+        "item": "Framing nails (8d common / per engineer)",
+        "quantity": 0,
+        "unit": "BOX (4000)",
+        "notes": "~0 nails est",
+        "unit_cost_usd": 48.0,
+        "pricing_rule": "keyword:Framing nails",
+        "extension_usd": 0.0
+      },
+      {
+        "category": "headers",
+        "item": "Header assumption: 2x8 or 2x10",
+        "quantity": 25,
+        "unit": "EA opening",
+        "notes": "Door A 3'-0\" x 7'-0\"",
+        "unit_cost_usd": 85.0,
+        "pricing_rule": "keyword:Header assumption",
+        "extension_usd": 2125.0
+      },
+      {
+        "category": "headers",
+        "item": "Header assumption: 2x10 or 2x12",
+        "quantity": 3,
+        "unit": "EA opening",
+        "notes": "Door BB 6'-0\" x 7'-0\"",
+        "unit_cost_usd": 85.0,
+        "pricing_rule": "keyword:Header assumption",
+        "extension_usd": 255.0
+      },
+      {
+        "category": "headers",
+        "item": "Header assumption: 2x8 or 2x10",
+        "quantity": 10,
+        "unit": "EA opening",
+        "notes": "Door C 3'-0\" x 7'-0\"",
+        "unit_cost_usd": 85.0,
+        "pricing_rule": "keyword:Header assumption",
+        "extension_usd": 850.0
+      },
+      {
+        "category": "headers",
+        "item": "Header assumption: 2x8 or 2x10",
+        "quantity": 80,
+        "unit": "EA opening",
+        "notes": "Door D 3'-0\" x 7'-0\"",
+        "unit_cost_usd": 85.0,
+        "pricing_rule": "keyword:Header assumption",
+        "extension_usd": 6800.0
+      },
+      {
+        "category": "headers",
+        "item": "Header assumption: 2x8 or 2x10",
+        "quantity": 3,
+        "unit": "EA opening",
+        "notes": "Door E 3'-6\" x 6'-8\"",
+        "unit_cost_usd": 85.0,
+        "pricing_rule": "keyword:Header assumption",
+        "extension_usd": 255.0
+      },
+      {
+        "category": "headers",
+        "item": "Header assumption: 2x10 or 2x12",
+        "quantity": 2,
+        "unit": "EA opening",
+        "notes": "Door FF 5'-0\" x 6'-8\"",
+        "unit_cost_usd": 85.0,
+        "pricing_rule": "keyword:Header assumption",
+        "extension_usd": 170.0
+      },
+      {
+        "category": "headers",
+        "item": "Header assumption: 2x8 or 2x10",
+        "quantity": 15,
+        "unit": "EA opening",
+        "notes": "Door G 2'-2\" x 4'-10\"",
+        "unit_cost_usd": 85.0,
+        "pricing_rule": "keyword:Header assumption",
+        "extension_usd": 1275.0
+      },
+      {
+        "category": "headers",
+        "item": "Header assumption: 2x8 or 2x10",
+        "quantity": 4,
+        "unit": "EA opening",
+        "notes": "Door H 3'-0\" x 7'-3\"",
+        "unit_cost_usd": 85.0,
+        "pricing_rule": "keyword:Header assumption",
+        "extension_usd": 340.0
+      }
+    ],
+    "benchmarks_reference": {
+      "residential": {
+        "sub_cost_per_sf": {
+          "low": 7,
+          "high": 8
+        },
+        "client_price_per_sf_trusses": {
+          "low": 12,
+          "high": 14
+        },
+        "client_price_per_sf_rafters": {
+          "low": 16,
+          "high": 20
+        },
+        "scope": "usually labor only"
+      },
+      "commercial_multifamily": {
+        "sub_cost_per_sf_framing_only": {
+          "low": 2,
+          "high": 3
+        },
+        "client_price_per_sf": {
+          "low": 5,
+          "high": 6
+        },
+        "scope": "usually material and labor"
+      }
+    },
+    "retainage_percent_note": 10
+  }
+}

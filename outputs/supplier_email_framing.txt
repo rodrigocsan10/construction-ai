@@ -1,0 +1,22 @@
+Subject: Material quote request — MT. ARLINGTON BUILDING 2
+
+To: 84 Lumber, Builders FirstSource, Woodhaven Lumber (KB — edit as needed)
+
+Please quote the following quantities (verify grade/spec on plans). Trusses / engineered members — see attached structural sheets.
+
+---
+
+[prefab_engineered] 1 LOT — Truss / TJI / engineered floor package — formal supplier quote required | Note: Attach plans; KB: do not self-price trusses without shop drawings
+[fasteners] 0 BOX (4000) — Framing nails (8d common / per engineer) | Note: ~0 nails est
+[headers] 25 EA opening — Header assumption: 2x8 or 2x10 | Note: Door A 3'-0" x 7'-0"
+[headers] 3 EA opening — Header assumption: 2x10 or 2x12 | Note: Door BB 6'-0" x 7'-0"
+[headers] 10 EA opening — Header assumption: 2x8 or 2x10 | Note: Door C 3'-0" x 7'-0"
+[headers] 80 EA opening — Header assumption: 2x8 or 2x10 | Note: Door D 3'-0" x 7'-0"
+[headers] 3 EA opening — Header assumption: 2x8 or 2x10 | Note: Door E 3'-6" x 6'-8"
+[headers] 2 EA opening — Header assumption: 2x10 or 2x12 | Note: Door FF 5'-0" x 6'-8"
+[headers] 15 EA opening — Header assumption: 2x8 or 2x10 | Note: Door G 2'-2" x 4'-10"
+[headers] 4 EA opening — Header assumption: 2x8 or 2x10 | Note: Door H 3'-0" x 7'-3"
+
+---
+
+Fire blocking, hardware connectors, and shear nailing — field verify on structural drawings.

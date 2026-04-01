@@ -1,0 +1,134 @@
+{
+    "trade_name": "Drywall & Insulation",
+    "scope_includes": [
+      "drywall hanging",
+      "drywall finishing (tape, mud, sand)",
+      "insulation installation (batt and mineral wool only)"
+    ],
+    "scope_excludes": [
+      "spray foam insulation",
+      "blown-in insulation",
+      "painting"
+    ],
+  
+    "drywall_rules": {
+      "measure_per_wall_type_per_side": true,
+      "measure_note": "Each side of a wall can have different board — must track Side A and Side B separately",
+      "waste_percent": { "low": 10, "high": 12 },
+      "subtract_openings": false,
+  
+      "sheet_sizes_available": {
+        "4x8": 32,
+        "4x10": 40,
+        "4x12": 48,
+        "4x14": 56,
+        "4x16": 64
+      },
+      "ai_optimize_sheet_size": true,
+      "optimization_note": "AI should recommend the sheet size that produces least waste based on wall height",
+  
+      "board_types": {
+        "standard_half": { "description": "1/2 inch standard GWB", "fire_rated": false },
+        "standard_five_eighths": { "description": "5/8 inch GWB", "fire_rated": false },
+        "type_x": { "description": "5/8 inch Type X — fire rated", "fire_rated": true },
+        "type_c": { "description": "5/8 inch Type C — enhanced fire rated", "fire_rated": true },
+        "cement_board": { "description": "Cement board — wet areas", "fire_rated": false },
+        "moisture_resistant": { "description": "Green board — moisture resistant", "fire_rated": false }
+      }
+    },
+  
+    "fire_rated_walls": {
+      "detection_required": true,
+      "detection_note": "System MUST identify fire-rated walls — they multiply material quantities",
+      "assemblies": {
+        "1_hour": {
+          "description": "Single layer 5/8 Type X each side",
+          "layers_per_side": 1,
+          "board_type": "type_x",
+          "ul_designs": ["U305", "U411", "U419"]
+        },
+        "2_hour": {
+          "description": "Two layers 5/8 Type X each side",
+          "layers_per_side": 2,
+          "board_type": "type_x",
+          "ul_designs": ["U301", "U411", "U419"]
+        }
+      },
+      "fire_caulking_required": true,
+      "fire_tape_required": true
+    },
+  
+    "pricing": {
+      "labor_is_subcontracted": true,
+      "hang_per_sheet": 10,
+      "finish_base_per_sheet": 10,
+      "finish_level_increment": 1,
+      "finish_levels": {
+        "0": { "description": "No finishing — concealed areas", "finish_cost": 0 },
+        "1": { "description": "Fire tape only", "finish_cost": 8 },
+        "2": { "description": "Tape + one coat", "finish_cost": 9 },
+        "3": { "description": "Standard — tape + two coats", "finish_cost": 10 },
+        "4": { "description": "Paint-ready", "finish_cost": 11 },
+        "5": { "description": "Premium skim entire surface", "finish_cost": 12 }
+      },
+      "default_when_plans_silent": 4,
+      "cement_board_same_price_as_gwb": true,
+      "material_markup_percent": 10
+    },
+  
+    "vertical_carry": {
+      "applies_when": "multi-story AND no elevator or hoist access",
+      "charge_per_sheet_per_floor": 0.75,
+      "status": "market test — adjust based on feedback"
+    },
+  
+    "insulation": {
+      "types_we_install": ["fiberglass_batt", "mineral_wool"],
+      "types_we_do_not_install": ["spray_foam", "blown_in"],
+      "waste_percent": { "low": 10, "high": 12 },
+      "pricing": {
+        "fiberglass_batt": {
+          "minimum_installed_per_sf": 1.25,
+          "note": "Floor price — never bid below this. Adjust after getting real sub quotes."
+        },
+        "mineral_wool": {
+          "minimum_installed_per_sf": 2.00,
+          "note": "Floor price — never bid below this. Adjust after getting real sub quotes."
+        }
+      },
+      "takeoff_note": "SF comes from same wall type measurements as drywall — insulation specs listed in wall type detail",
+      "batt_takeoff": {
+        "method": "Wall batts: stud bays × vertical courses (wall height ÷ pre-cut batt length). Bays = stud_count − 1 from framing takeoff, else LF×12÷spacing. Then apply waste. Order using bags (FG) or bundles (mineral wool) from supplier counts.",
+        "fiberglass_batt": {
+          "precut_length_ft": 7.75,
+          "pieces_per_bag_typical": 10,
+          "description": "Example: 93\" pre-cut batts; bag count varies by R-value and supplier"
+        },
+        "mineral_wool": {
+          "precut_length_ft": 7.75,
+          "pieces_per_bundle_typical": 6,
+          "description": "Roxul-style batts; bundle sizes vary — verify with supplier"
+        },
+        "batt_width_by_stud_spacing_inches": {
+          "16": 15.25,
+          "24": 23.0
+        },
+        "ceiling_unfaced_nominal_sf_per_piece": 40.0,
+        "ceiling_note": "Ceiling batts/rolls: rough pieces = ceiling SF ÷ nominal SF per piece (joist bay product — calibrate to your supplier)"
+      }
+    },
+  
+    "gotchas": {
+      "furring_channels": "Flag when wall type mentions furring, resilient channels, or hat track — extra material and labor",
+      "fire_caulking": "Required at all penetrations through fire-rated assemblies — add as line item",
+      "scissor_lift": "Walls/ceilings above 12 ft — scissor lift rental (~$5K/mo KB); priced when wall height exceeds threshold",
+      "mobilization": "Same formula as framing when enabled on price_drywall (miles × $0.50 × days)"
+    },
+  
+    "kb_optional_line_items": {
+      "fire_caulking_usd_per_sf_fire_wall": 0.45,
+      "furring_extra_usd_per_sf": 2.0,
+      "scissor_lift_monthly_usd": 5000,
+      "wall_height_ft_scissor_threshold": 12
+    }
+}

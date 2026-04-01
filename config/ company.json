@@ -1,0 +1,30 @@
+{
+    "company_name": "Fortify Construction LLC",
+    "zip_code": "08075",
+    "max_distance_miles": 100,
+    "mobilization_rate_per_mile": 0.50,
+    "default_tax_rate_percent": 6.625,
+    "material_markup_min_percent": 10,
+    "material_markup_max_percent": 12,
+    "labor_rates": {
+      "helper_hourly": 25,
+      "carpenter_hourly": 30,
+      "foreman_hourly": 40
+    },
+    "overhead_percent": 10,
+    "profit_percent": 10,
+    "contingency_percent": 5,
+    "retainage_percent": 10,
+    "scope_types": {
+      "labor_only": {
+        "description": "Client furnishes all materials, we provide labor",
+        "material_markup": false,
+        "tax_on_materials": false
+      },
+      "labor_and_material": {
+        "description": "We furnish materials and provide labor",
+        "material_markup": true,
+        "tax_on_materials": true
+      }
+    }
+  }

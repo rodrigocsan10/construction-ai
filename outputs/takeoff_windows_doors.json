@@ -1,0 +1,76 @@
+{
+  "project": {
+    "floors": 6,
+    "name": "MT. ARLINGTON BUILDING 2",
+    "scale": "1/8\" = 1'-0\" (overall plans), 1/4\" = 1'-0\" (enlarged plans)",
+    "scale_verified": true,
+    "total_sf": 0,
+    "type": "multifamily"
+  },
+  "trade": "Exterior Windows & Doors Installation",
+  "exterior_windows": [],
+  "exterior_doors": [
+    {
+      "tag": "A",
+      "type": "exterior/hm",
+      "size": "3'-0\" x 7'-0\"",
+      "count": 25,
+      "category": "hinged_exterior",
+      "scope": "exterior_door"
+    },
+    {
+      "tag": "BB",
+      "type": "glass",
+      "size": "6'-0\" x 7'-0\"",
+      "count": 3,
+      "category": "sliding_glass",
+      "scope": "exterior_door"
+    },
+    {
+      "tag": "C",
+      "type": "hm stair",
+      "size": "3'-0\" x 7'-0\"",
+      "count": 10,
+      "category": "hinged_exterior",
+      "scope": "exterior_door"
+    },
+    {
+      "tag": "E",
+      "type": "wood barn/slider",
+      "size": "3'-6\" x 6'-8\"",
+      "count": 3,
+      "category": "sliding_glass",
+      "scope": "exterior_door"
+    },
+    {
+      "tag": "FF",
+      "type": "wood-slider",
+      "size": "5'-0\" x 6'-8\"",
+      "count": 2,
+      "category": "sliding_glass",
+      "scope": "exterior_door"
+    },
+    {
+      "tag": "G",
+      "type": "metal access",
+      "size": "2'-2\" x 4'-10\"",
+      "count": 15,
+      "category": "hinged_exterior",
+      "scope": "exterior_door"
+    },
+    {
+      "tag": "H",
+      "type": "aluminum",
+      "size": "3'-0\" x 7'-3\"",
+      "count": 4,
+      "category": "hinged_exterior",
+      "scope": "exterior_door"
+    }
+  ],
+  "totals": {
+    "exterior_window_units": 0,
+    "exterior_door_units": 62,
+    "interior_doors_excluded_note": "Interior doors excluded per trade scope"
+  },
+  "config_ref": "/Users/rodrigo/construction-ai/config/Trades/windows_doors.json"
+}

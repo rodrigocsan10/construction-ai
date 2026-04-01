@@ -1,0 +1,171 @@
+{
+  "_source_pdf": "/Users/rodrigo/construction-ai/data/Plans_AR.pdf",
+  "_pages_analyzed": "17-22",
+  "_total_pages_in_file": 22,
+  "project": {
+    "name": "Mt. Arlington Building 2",
+    "type": "multifamily",
+    "total_sf": 0,
+    "floors": 5,
+    "scale": "1/4\" = 1'-0\"",
+    "scale_verified": true
+  },
+  "wall_types": [],
+  "doors": [
+    {
+      "tag": "Type A",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type AA",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type B",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type BB",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type C",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type CC",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type D",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type DD",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type E",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type FF",
+      "size": "",
+      "type": "sliding",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type G",
+      "size": "",
+      "type": "access panel",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type H",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type 1",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    },
+    {
+      "tag": "Type 2",
+      "size": "",
+      "type": "interior",
+      "brand": "",
+      "count": 0
+    }
+  ],
+  "windows": [
+    {
+      "tag": "W1",
+      "size": "",
+      "type": "single-hung",
+      "brand": "Pella Impervia",
+      "count": 0
+    },
+    {
+      "tag": "W2",
+      "size": "",
+      "type": "single-hung",
+      "brand": "Pella Impervia",
+      "count": 0
+    },
+    {
+      "tag": "W3",
+      "size": "",
+      "type": "single-hung",
+      "brand": "Pella Impervia",
+      "count": 0
+    }
+  ],
+  "structural": {
+    "hardware_brand": "",
+    "fastener_specs": "",
+    "shear_walls": "",
+    "beams_and_posts": [],
+    "floor_system": {
+      "type": "",
+      "spacing": "",
+      "notes": ""
+    },
+    "roof_system": {
+      "type": "",
+      "notes": ""
+    },
+    "subfloor": {
+      "type": "",
+      "fastener": ""
+    }
+  },
+  "sheathing": {
+    "type": "",
+    "zip_tape_required": false,
+    "notes": ""
+  },
+  "finishes": {
+    "drywall_finish_level": 0,
+    "special_notes": ""
+  },
+  "general_notes": {
+    "weather_barrier": "Air/moisture barrier (drainable weather resistant barrier, self-adhering flexible membrane flashing mentioned in details)",
+    "fire_blocking": "",
+    "special_blocking": "",
+    "other_notes": ""
+  }
+}

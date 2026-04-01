@@ -1,0 +1,104 @@
+{
+    "trade_name": "Rough Framing + Sheathing",
+    "scope_includes": [
+      "walls (plates, studs, blocking, bracing)",
+      "headers",
+      "floor system (joists or dimensional lumber)",
+      "roof system (trusses sent to supplier, rafters calculated)",
+      "sheathing (exterior walls, roof deck)",
+      "exterior window and door installation",
+      "fire blocking",
+      "structural hardware installation"
+    ],
+    "scope_excludes": [
+      "interior doors (optional add-on)",
+      "stairs (sometimes separate on commercial)"
+    ],
+  
+    "wall_rules": {
+      "plates_per_wall": 3,
+      "waste_factor": 1.10,
+      "stud_formula_note": "LF x waste_factor x 12 / spacing = stud count, round up",
+      "bracing_rule": "one 2x4 16-footer per 8 LF of wall",
+      "go_through_openings": true,
+      "default_interior_stud": "2x4",
+      "default_exterior_stud": "2x6",
+      "default_spacing_inches": 16,
+      "nails_per_lf": 10,
+      "nails_per_box": 4000,
+      "nail_box_cost": 45
+    },
+  
+    "header_rules": {
+      "follow_plans_first": true,
+      "assumption_code_reference": "IRC Table R602.7",
+      "assumptions_when_plans_incomplete": {
+        "opening_under_4ft": "2x8 or 2x10",
+        "opening_4ft_to_6ft": "2x10 or 2x12",
+        "opening_over_6ft": "LVL"
+      },
+      "disclaimer_text": "Header sizing assumed per IRC Table R602.7 — pending final structural drawings"
+    },
+  
+    "sheathing_rules": {
+      "waste_simple_percent": 10,
+      "waste_complex_percent": 15,
+      "sheet_sf": 32,
+      "labor_per_sheet_low": 8,
+      "labor_per_sheet_high": 9,
+      "subtract_windows_and_doors": true,
+      "types": {
+        "osb": { "description": "OSB 7/16", "cost_tier": "low" },
+        "cdx": { "description": "CDX plywood", "cost_tier": "mid" },
+        "zip": { "description": "ZIP sheathing + tape + roller", "cost_tier": "high" },
+        "fire_rated": { "description": "Fire-rated sheathing", "cost_tier": "high" }
+      }
+    },
+  
+    "floor_rules": {
+      "round_joist_length_up_to_even": true,
+      "waste_factor": 1.10,
+      "subfloor_check": ["tongue_and_groove", "glue", "nailed_or_screwed"],
+      "screwed_subfloor_labor_premium": true
+    },
+  
+    "roof_rules": {
+      "trusses": {
+        "action": "send plans to truss company for quote",
+        "pricing_impact": "lower labor, easier install"
+      },
+      "rafters": {
+        "action": "calculate like floor joists — count, size, length rounded up",
+        "pricing_impact": "higher labor, complexity premium 25-40%"
+      }
+    },
+  
+    "pricing_benchmarks": {
+      "residential": {
+        "sub_cost_per_sf": { "low": 7, "high": 8 },
+        "client_price_per_sf_trusses": { "low": 12, "high": 14 },
+        "client_price_per_sf_rafters": { "low": 16, "high": 20 },
+        "scope": "usually labor only"
+      },
+      "commercial_multifamily": {
+        "sub_cost_per_sf_framing_only": { "low": 2, "high": 3 },
+        "client_price_per_sf": { "low": 5, "high": 6 },
+        "scope": "usually material and labor"
+      }
+    },
+  
+    "blockout_crew": {
+      "applies_to": "commercial and multifamily",
+      "crew_size": { "min": 2, "max": 3 },
+      "hourly_rate": 30,
+      "hours_per_day": 9,
+      "duration_rule": "half of framing crew duration"
+    },
+  
+    "equipment_rules": {
+      "stories_1_to_2": "no telehandler required (optional)",
+      "stories_3_plus": "telehandler required",
+      "trusses_or_heavy_panels": "crane required",
+      "proposal_language": "All equipment necessary for execution included unless otherwise noted."
+    }
+  }

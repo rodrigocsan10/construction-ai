@@ -1,0 +1,109 @@
+{
+  "source_takeoff": "/Users/rodrigo/construction-ai/outputs/takeoff_drywall.json",
+  "pricing": {
+    "inputs": {
+      "finish_level": "4",
+      "hang_per_sheet": 10.0,
+      "finish_per_sheet": 11.0,
+      "labor_per_sheet_combined": 21.0,
+      "vertical_carry_applied": false,
+      "mobilization_round_trip_miles": 80.0,
+      "mobilization_working_days": 45,
+      "kb_extras_skipped": false,
+      "markup_percent": 10.0,
+      "tax_percent": 6.625,
+      "tax_model_note": "Subcontract bundle: tax on (subtotal + markup), not materials-first ladder"
+    },
+    "summary_usd": {
+      "drywall_labor_sheets": 0.0,
+      "insulation": 0.0,
+      "vertical_carry": 0.0,
+      "kb_extras_fire_furr_lift": 0.0,
+      "mobilization": 1800.0,
+      "markup": 180.0,
+      "sales_tax": 131.18,
+      "grand_total": 2111.18
+    },
+    "summary_table": [
+      {
+        "line": "Hang + finish (per sheet) \u00d7 total sheets",
+        "detail": "0 @ $21.00/sheet",
+        "usd": 0.0
+      },
+      {
+        "line": "  (wall sheets)",
+        "detail": "0",
+        "usd": ""
+      },
+      {
+        "line": "  (ceiling sheets)",
+        "detail": "0",
+        "usd": ""
+      },
+      {
+        "line": "Insulation (floor pricing)",
+        "detail": "FG SF 0 @ 1.25 + MW SF 0 @ 2.0",
+        "usd": 0.0
+      },
+      {
+        "line": "Insulation order qty (est.)",
+        "detail": "wall batts 0; FG bags 0; MW bundles 0",
+        "usd": ""
+      },
+      {
+        "line": "Vertical carry",
+        "detail": "off",
+        "usd": 0.0
+      },
+      {
+        "line": "KB: fire caulking (est.)",
+        "detail": "\u2014",
+        "usd": ""
+      },
+      {
+        "line": "KB: furring / RC extra (est.)",
+        "detail": "\u2014",
+        "usd": ""
+      },
+      {
+        "line": "KB: scissor lift (1 mo est.)",
+        "detail": "\u2014",
+        "usd": ""
+      },
+      {
+        "line": "Mobilization (KB formula)",
+        "detail": "80.0 RT mi \u00d7 $0.5 \u00d7 45 days",
+        "usd": 1800.0
+      },
+      {
+        "line": "Markup (10.0%)",
+        "detail": "on sub total",
+        "usd": 180.0
+      },
+      {
+        "line": "Sales tax",
+        "detail": "6.625%",
+        "usd": 131.18
+      },
+      {
+        "line": "GRAND TOTAL",
+        "detail": "",
+        "usd": 2111.18
+      }
+    ]
+  },
+  "takeoff_totals": {
+    "gwb_wall_sf": 0.0,
+    "ceiling_sf": 0.0,
+    "gwb_combined_sf": 0.0,
+    "insulation_sf": 0.0,
+    "insulation_wall_batt_pieces_est": 0,
+    "insulation_fiberglass_bags_est": 0,
+    "insulation_mineral_wool_bundles_est": 0,
+    "insulation_ceiling_batt_pieces_est": 0,
+    "wall_sheet_count_est": 0,
+    "ceiling_sheet_count_est": 0,
+    "total_sheet_count_est": 0,
+    "kb_optional_subtotal_usd": 0.0
+  }
+}

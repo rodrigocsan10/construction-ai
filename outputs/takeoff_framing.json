@@ -1,0 +1,406 @@
+{
+  "project": {
+    "floors": 6,
+    "name": "MT. ARLINGTON BUILDING 2",
+    "scale": "1/8\" = 1'-0\" (overall plans), 1/4\" = 1'-0\" (enlarged plans)",
+    "scale_verified": true,
+    "total_sf": 0,
+    "type": "multifamily"
+  },
+  "inputs": {
+    "wall_height_ft": 10.0,
+    "stud_length_ft": 10.0,
+    "sheathing_waste_pct": 12.0,
+    "lf_floor_multiplier": 1
+  },
+  "wall_type_takeoff": [
+    {
+      "tag": "EW1",
+      "location": "exterior",
+      "stud_size_spec": "6\" metal",
+      "framing_class": "metal",
+      "spacing_inches": 24,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW2",
+      "location": "exterior",
+      "stud_size_spec": "6\" metal",
+      "framing_class": "metal",
+      "spacing_inches": 24,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW3",
+      "location": "exterior",
+      "stud_size_spec": "2x6 wood",
+      "framing_class": "wood_2x6",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW3.1",
+      "location": "exterior",
+      "stud_size_spec": "2x6 wood",
+      "framing_class": "wood_2x6",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW4",
+      "location": "exterior",
+      "stud_size_spec": "2x6 wood",
+      "framing_class": "wood_2x6",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW4.1",
+      "location": "exterior",
+      "stud_size_spec": "2x6 wood",
+      "framing_class": "wood_2x6",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW5",
+      "location": "exterior",
+      "stud_size_spec": "2x6 wood",
+      "framing_class": "wood_2x6",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW5.1",
+      "location": "exterior",
+      "stud_size_spec": "2x6 wood",
+      "framing_class": "wood_2x6",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW6",
+      "location": "exterior",
+      "stud_size_spec": "8\" CMU",
+      "framing_class": "masonry",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW7",
+      "location": "exterior",
+      "stud_size_spec": "8\" CMU",
+      "framing_class": "masonry",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW8",
+      "location": "exterior",
+      "stud_size_spec": "concrete",
+      "framing_class": "masonry",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    },
+    {
+      "tag": "EW9",
+      "location": "exterior",
+      "stud_size_spec": "concrete",
+      "framing_class": "masonry",
+      "spacing_inches": 16,
+      "linear_feet": 0.0,
+      "linear_feet_source": "missing",
+      "plate_lumber_lf": 0.0,
+      "stud_count": 0,
+      "bracing_2x4x16_count": 0,
+      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+    }
+  ],
+  "totals": {
+    "total_wall_lf": 0,
+    "total_plate_lf": 0,
+    "total_studs": 0,
+    "total_bracing_sticks": 0,
+    "wood_2x4_studs": 0,
+    "wood_2x6_studs": 0,
+    "metal_stud_walls_lf": 0,
+    "framing_nail_count_est": 0.0,
+    "framing_nail_boxes_4000_est": 0
+  },
+  "sheathing": {
+    "exterior_framed_wall_lf": 0.0,
+    "gross_exterior_wall_sf": 0.0,
+    "opening_sf_subtracted": 2921.75,
+    "net_exterior_wall_sf": 0.0,
+    "sheet_size_sf": 32.0,
+    "waste_percent": 12.0,
+    "wall_sheathing_sheets_4x8_equiv": 0,
+    "roof_deck_sf": 0.0,
+    "roof_sheathing_sheets_4x8_equiv": 0,
+    "profile_sheathing_note": {
+      "notes": "ZIP sheathing for Rated Assemblies EW4, EW5 and similar; tape and roller are required for all ZIP joints",
+      "type": "ZIP (for some walls), gypsum sheathing, polyiso rigid, CMU",
+      "zip_tape_required": true
+    }
+  },
+  "headers_from_doors": [
+    {
+      "door_tag": "A",
+      "count": 25,
+      "size": "3'-0\" x 7'-0\"",
+      "opening_width_ft": 3.0,
+      "opening_height_ft": 7.0,
+      "assumed_header": "2x8 or 2x10",
+      "count_headers": 25,
+      "disclaimer": "Header sizing assumed per IRC Table R602.7 \u2014 pending final structural drawings"
+    },
+    {
+      "door_tag": "BB",
+      "count": 3,
+      "size": "6'-0\" x 7'-0\"",
+      "opening_width_ft": 6.0,
+      "opening_height_ft": 7.0,
+      "assumed_header": "2x10 or 2x12",
+      "count_headers": 3,
+      "disclaimer": "Header sizing assumed per IRC Table R602.7 \u2014 pending final structural drawings"
+    },
+    {
+      "door_tag": "C",
+      "count": 10,
+      "size": "3'-0\" x 7'-0\"",
+      "opening_width_ft": 3.0,
+      "opening_height_ft": 7.0,
+      "assumed_header": "2x8 or 2x10",
+      "count_headers": 10,
+      "disclaimer": "Header sizing assumed per IRC Table R602.7 \u2014 pending final structural drawings"
+    },
+    {
+      "door_tag": "D",
+      "count": 80,
+      "size": "3'-0\" x 7'-0\"",
+      "opening_width_ft": 3.0,
+      "opening_height_ft": 7.0,
+      "assumed_header": "2x8 or 2x10",
+      "count_headers": 80,
+      "disclaimer": "Header sizing assumed per IRC Table R602.7 \u2014 pending final structural drawings"
+    },
+    {
+      "door_tag": "E",
+      "count": 3,
+      "size": "3'-6\" x 6'-8\"",
+      "opening_width_ft": 3.5,
+      "opening_height_ft": 6.667,
+      "assumed_header": "2x8 or 2x10",
+      "count_headers": 3,
+      "disclaimer": "Header sizing assumed per IRC Table R602.7 \u2014 pending final structural drawings"
+    },
+    {
+      "door_tag": "FF",
+      "count": 2,
+      "size": "5'-0\" x 6'-8\"",
+      "opening_width_ft": 5.0,
+      "opening_height_ft": 6.667,
+      "assumed_header": "2x10 or 2x12",
+      "count_headers": 2,
+      "disclaimer": "Header sizing assumed per IRC Table R602.7 \u2014 pending final structural drawings"
+    },
+    {
+      "door_tag": "G",
+      "count": 15,
+      "size": "2'-2\" x 4'-10\"",
+      "opening_width_ft": 2.167,
+      "opening_height_ft": 4.833,
+      "assumed_header": "2x8 or 2x10",
+      "count_headers": 15,
+      "disclaimer": "Header sizing assumed per IRC Table R602.7 \u2014 pending final structural drawings"
+    },
+    {
+      "door_tag": "H",
+      "count": 4,
+      "size": "3'-0\" x 7'-3\"",
+      "opening_width_ft": 3.0,
+      "opening_height_ft": 7.25,
+      "assumed_header": "2x8 or 2x10",
+      "count_headers": 4,
+      "disclaimer": "Header sizing assumed per IRC Table R602.7 \u2014 pending final structural drawings"
+    }
+  ],
+  "structural_summary": {
+    "beams_and_posts": [],
+    "fastener_specs": "",
+    "floor_system": {
+      "notes": "",
+      "spacing": "",
+      "type": "concrete podium with wood truss framing above"
+    },
+    "hardware_brand": "",
+    "roof_system": {
+      "notes": "Sloped plywood deck over TJI",
+      "type": "TJI (Truss Joist I-Joist)"
+    },
+    "shear_walls": "Concrete shear wall, see structural",
+    "subfloor": {
+      "fastener": "",
+      "type": "Not specified"
+    }
+  },
+  "equipment_notes": {
+    "stories_1_to_2": "no telehandler required (optional)",
+    "stories_3_plus": "telehandler required",
+    "trusses_or_heavy_panels": "crane required",
+    "proposal_language": "All equipment necessary for execution included unless otherwise noted."
+  },
+  "floor_roof_estimating": {
+    "roof_labor_tier": "truss_engineered",
+    "roof_system": {
+      "notes": "Sloped plywood deck over TJI",
+      "type": "TJI (Truss Joist I-Joist)"
+    },
+    "floor_system": {
+      "notes": "",
+      "spacing": "",
+      "type": "concrete podium with wood truss framing above"
+    },
+    "floor_estimating": {
+      "action": "supplier_quote_or_engineered",
+      "note": "Truss/TJI/concrete/podium \u2014 get supplier/engineered takeoff; do not guess joist counts without spans."
+    },
+    "roof_rules_reference": {
+      "trusses": {
+        "action": "send plans to truss company for quote",
+        "pricing_impact": "lower labor, easier install"
+      },
+      "rafters": {
+        "action": "calculate like floor joists \u2014 count, size, length rounded up",
+        "pricing_impact": "higher labor, complexity premium 25-40%"
+      }
+    }
+  },
+  "supplier_list": [
+    {
+      "category": "prefab_engineered",
+      "item": "Truss / TJI / engineered floor package \u2014 formal supplier quote required",
+      "quantity": 1,
+      "unit": "LOT",
+      "notes": "Attach plans; KB: do not self-price trusses without shop drawings"
+    },
+    {
+      "category": "fasteners",
+      "item": "Framing nails (8d common / per engineer)",
+      "quantity": 0,
+      "unit": "BOX (4000)",
+      "notes": "~0 nails est"
+    },
+    {
+      "category": "headers",
+      "item": "Header assumption: 2x8 or 2x10",
+      "quantity": 25,
+      "unit": "EA opening",
+      "notes": "Door A 3'-0\" x 7'-0\""
+    },
+    {
+      "category": "headers",
+      "item": "Header assumption: 2x10 or 2x12",
+      "quantity": 3,
+      "unit": "EA opening",
+      "notes": "Door BB 6'-0\" x 7'-0\""
+    },
+    {
+      "category": "headers",
+      "item": "Header assumption: 2x8 or 2x10",
+      "quantity": 10,
+      "unit": "EA opening",
+      "notes": "Door C 3'-0\" x 7'-0\""
+    },
+    {
+      "category": "headers",
+      "item": "Header assumption: 2x8 or 2x10",
+      "quantity": 80,
+      "unit": "EA opening",
+      "notes": "Door D 3'-0\" x 7'-0\""
+    },
+    {
+      "category": "headers",
+      "item": "Header assumption: 2x8 or 2x10",
+      "quantity": 3,
+      "unit": "EA opening",
+      "notes": "Door E 3'-6\" x 6'-8\""
+    },
+    {
+      "category": "headers",
+      "item": "Header assumption: 2x10 or 2x12",
+      "quantity": 2,
+      "unit": "EA opening",
+      "notes": "Door FF 5'-0\" x 6'-8\""
+    },
+    {
+      "category": "headers",
+      "item": "Header assumption: 2x8 or 2x10",
+      "quantity": 15,
+      "unit": "EA opening",
+      "notes": "Door G 2'-2\" x 4'-10\""
+    },
+    {
+      "category": "headers",
+      "item": "Header assumption: 2x8 or 2x10",
+      "quantity": 4,
+      "unit": "EA opening",
+      "notes": "Door H 3'-0\" x 7'-3\""
+    }
+  ]
+}

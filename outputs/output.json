@@ -1,0 +1,132 @@
+{
+  "pdf_file": "/Users/rodrigo/construction-ai/data/Plan1.pdf",
+  "extraction_mode": "json_schema",
+  "takeoff": {
+    "drywall_sf": 26000.0,
+    "framing_lf": 3600.0,
+    "roofing_sf": 0.0,
+    "sheathing_sf": 0.0,
+    "doors": [
+      {
+        "type": "D1",
+        "count": 20.0
+      }
+    ],
+    "windows": [
+      {
+        "type": "W1",
+        "count": 36.0
+      },
+      {
+        "type": "W3",
+        "count": 22.0
+      },
+      {
+        "type": "EW3",
+        "count": 12.0
+      },
+      {
+        "type": "EW5",
+        "count": 10.0
+      },
+      {
+        "type": "EW5.1",
+        "count": 10.0
+      },
+      {
+        "type": "EW4",
+        "count": 10.0
+      },
+      {
+        "type": "EW6",
+        "count": 4.0
+      },
+      {
+        "type": "EW7",
+        "count": 4.0
+      }
+    ],
+    "concrete": []
+  },
+  "raw_ai_output": "{\"drywall_sf\": 26000, \"framing_lf\": 3600, \"roofing_sf\": 0, \"sheathing_sf\": 0, \"doors\": [{\"type\": \"D1\", \"count\": 20}], \"windows\": [{\"type\": \"W1\", \"count\": 36}, {\"type\": \"W3\", \"count\": 22}, {\"type\": \"EW3\", \"count\": 12}, {\"type\": \"EW5\", \"count\": 10}, {\"type\": \"EW5.1\", \"count\": 10}, {\"type\": \"EW4\", \"count\": 10}, {\"type\": \"EW6\", \"count\": 4}, {\"type\": \"EW7\", \"count\": 4}], \"concrete\": []}",
+  "cost_breakdown": {
+    "line_items": [
+      {
+        "item": "Drywall",
+        "qty": 26000.0,
+        "unit": "SF",
+        "material_rate": 0.55,
+        "labor_rate": 0.7,
+        "material_total": 14300.0,
+        "labor_total": 18200.0
+      },
+      {
+        "item": "Framing",
+        "qty": 3600.0,
+        "unit": "LF",
+        "material_rate": 8.0,
+        "labor_rate": 10.0,
+        "material_total": 28800.0,
+        "labor_total": 36000.0
+      },
+      {
+        "item": "Roofing",
+        "qty": 0.0,
+        "unit": "SF",
+        "material_rate": 2.1,
+        "labor_rate": 1.85,
+        "material_total": 0.0,
+        "labor_total": 0.0
+      },
+      {
+        "item": "Sheathing",
+        "qty": 0.0,
+        "unit": "SF",
+        "material_rate": 1.4,
+        "labor_rate": 0.95,
+        "material_total": 0.0,
+        "labor_total": 0.0
+      },
+      {
+        "item": "Doors (install bundle)",
+        "qty": 20.0,
+        "unit": "EA",
+        "material_rate": 85.0,
+        "labor_rate": 65.0,
+        "material_total": 1700.0,
+        "labor_total": 1300.0
+      },
+      {
+        "item": "Windows (install bundle)",
+        "qty": 108.0,
+        "unit": "EA",
+        "material_rate": 70.0,
+        "labor_rate": 50.0,
+        "material_total": 7560.0,
+        "labor_total": 5400.0
+      },
+      {
+        "item": "Concrete (parsed units only)",
+        "qty": "",
+        "unit": "",
+        "material_rate": "",
+        "labor_rate": "",
+        "material_total": 0.0,
+        "labor_total": 0.0
+      }
+    ],
+    "concrete_detail": [],
+    "totals": {
+      "material": 52360.0,
+      "labor": 60900.0,
+      "direct_cost": 113260.0,
+      "markup_percent": 15.0,
+      "markup_amount": 16989.0,
+      "grand_total": 130249.0,
+      "profit_dollars": 16989.0,
+      "profit_percent_of_revenue": 13.04
+    },
+    "doors_total": 20.0,
+    "windows_total": 108.0
+  }
+}

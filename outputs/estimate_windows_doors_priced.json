@@ -1,0 +1,93 @@
+{
+  "source_takeoff": "/Users/rodrigo/construction-ai/outputs/takeoff_windows_doors.json",
+  "pricing": {
+    "inputs": {
+      "project_type": "multifamily",
+      "commercial_rates": true,
+      "markup_percent": 20.0,
+      "tax_on_materials": false
+    },
+    "line_items": [
+      {
+        "kind": "door",
+        "tag": "A",
+        "description": "exterior/hm (hinged_exterior) \u00d725",
+        "unit_rate": 75.0,
+        "qty": 25,
+        "install_usd": 1875.0
+      },
+      {
+        "kind": "door",
+        "tag": "BB",
+        "description": "glass (sliding_glass) \u00d73",
+        "unit_rate": 250.0,
+        "qty": 3,
+        "install_usd": 750.0
+      },
+      {
+        "kind": "door",
+        "tag": "C",
+        "description": "hm stair (hinged_exterior) \u00d710",
+        "unit_rate": 75.0,
+        "qty": 10,
+        "install_usd": 750.0
+      },
+      {
+        "kind": "door",
+        "tag": "E",
+        "description": "wood barn/slider (sliding_glass) \u00d73",
+        "unit_rate": 250.0,
+        "qty": 3,
+        "install_usd": 750.0
+      },
+      {
+        "kind": "door",
+        "tag": "FF",
+        "description": "wood-slider (sliding_glass) \u00d72",
+        "unit_rate": 250.0,
+        "qty": 2,
+        "install_usd": 500.0
+      },
+      {
+        "kind": "door",
+        "tag": "G",
+        "description": "metal access (hinged_exterior) \u00d715",
+        "unit_rate": 75.0,
+        "qty": 15,
+        "install_usd": 1125.0
+      },
+      {
+        "kind": "door",
+        "tag": "H",
+        "description": "aluminum (hinged_exterior) \u00d74",
+        "unit_rate": 75.0,
+        "qty": 4,
+        "install_usd": 300.0
+      }
+    ],
+    "summary_usd": {
+      "install": 6050.0,
+      "handling": 930.0,
+      "markup": 1396.0,
+      "grand_total": 8376.0
+    },
+    "summary_table": [
+      {
+        "line": "Install subtotal",
+        "usd": 6050.0
+      },
+      {
+        "line": "Handling (0 win @ 20.0 + 62 dr @ 15.0)",
+        "usd": 930.0
+      },
+      {
+        "line": "Markup (20.0%)",
+        "usd": 1396.0
+      },
+      {
+        "line": "GRAND TOTAL (labor package)",
+        "usd": 8376.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_comment": "Reference rental rates from KNOWLEDGE_BASE — adjust with supplier quotes.",
+  "monthly_usd": {
+    "genie_lift_boom_scissor": 5000,
+    "telehandler": 5000
+  },
+  "hourly_usd": {
+    "crane": 290
+  },
+  "story_rules": {
+    "stories_1_to_2": "Telehandler typically optional.",
+    "stories_3_plus": "Telehandler often required.",
+    "trusses_heavy_panels_or_3_plus_floors": "Crane may be required — verify erection plan."
+  },
+  "proposal_language": "All equipment necessary for execution included unless otherwise noted.",
+  "proration_note": "Pricer uses --equipment-months × monthly rate as a lump allowance when enabled; calibrate to job duration."
+}

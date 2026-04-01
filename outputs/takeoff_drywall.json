@@ -1,0 +1,194 @@
+{
+  "project": {
+    "floors": 6,
+    "name": "MT. ARLINGTON BUILDING 2",
+    "scale": "1/8\" = 1'-0\" (overall plans), 1/4\" = 1'-0\" (enlarged plans)",
+    "scale_verified": true,
+    "total_sf": 0,
+    "type": "multifamily"
+  },
+  "inputs": {
+    "wall_height_ft": 10.0,
+    "ceiling_sf": 0.0,
+    "waste_percent": 11.0,
+    "insulation_waste_percent": 11.0,
+    "sheet_nominal": "4x10",
+    "sheet_sf": 40.0
+  },
+  "insulation_quantity_note": "Wall batts: stud bays \u00d7 vertical courses (wall height \u00f7 pre-cut batt length). Bays = stud_count \u2212 1 from framing takeoff, else LF\u00d712\u00f7spacing. Then apply waste. Order using bags (FG) or bundles (mineral wool) from supplier counts.",
+  "kb_optional_allowances": {
+    "fire_rated_wall_sf": 0.0,
+    "fire_caulking_usd": 0.0,
+    "furring_channel_wall_sf": 0.0,
+    "furring_extra_usd": 0.0,
+    "scissor_lift_usd": 0.0,
+    "scissor_lift_applies": false,
+    "wall_height_ft": 10.0
+  },
+  "wall_rows": [
+    {
+      "tag": "EW1",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW2",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW3",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW3.1",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW4",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW4.1",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW5",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW5.1",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW6",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW7",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW8",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    },
+    {
+      "tag": "EW9",
+      "location": "exterior",
+      "linear_feet": 0.0,
+      "wall_height_ft": 10.0,
+      "gwb_side_a_sf": 0.0,
+      "gwb_side_b_sf": 0.0,
+      "gwb_total_sf": 0.0,
+      "insulation_sf": 0.0,
+      "insulation_kind": "",
+      "notes": "No LF in framing takeoff \u2014 add wall type to LF file"
+    }
+  ],
+  "totals": {
+    "gwb_wall_sf": 0.0,
+    "ceiling_sf": 0.0,
+    "gwb_combined_sf": 0.0,
+    "insulation_sf": 0.0,
+    "insulation_wall_batt_pieces_est": 0,
+    "insulation_fiberglass_bags_est": 0,
+    "insulation_mineral_wool_bundles_est": 0,
+    "insulation_ceiling_batt_pieces_est": 0,
+    "wall_sheet_count_est": 0,
+    "ceiling_sheet_count_est": 0,
+    "total_sheet_count_est": 0,
+    "kb_optional_subtotal_usd": 0.0
+  },
+  "gotchas": {
+    "furring_channels": "Flag when wall type mentions furring, resilient channels, or hat track \u2014 extra material and labor",
+    "fire_caulking": "Required at all penetrations through fire-rated assemblies \u2014 add as line item",
+    "scissor_lift": "Walls/ceilings above 12 ft \u2014 scissor lift rental (~$5K/mo KB); priced when wall height exceeds threshold",
+    "mobilization": "Same formula as framing when enabled on price_drywall (miles \u00d7 $0.50 \u00d7 days)"
+  }
+}

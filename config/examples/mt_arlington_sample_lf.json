@@ -1,0 +1,20 @@
+{
+  "_comment": "Sample LF for demo only — replace with real takeoff from plans",
+  "wall_linear_feet": {
+    "EW1": 380,
+    "EW2": 220,
+    "EW3": 450,
+    "EW3.1": 120,
+    "EW4": 510,
+    "EW4.1": 90,
+    "EW5": 200,
+    "EW5.1": 60,
+    "EW6": 180,
+    "EW7": 140,
+    "EW8": 95,
+    "EW9": 110
+  },
+  "roof_deck_sf": 18500,
+  "wall_height_ft": 10,
+  "lf_is_per_floor": false
+}

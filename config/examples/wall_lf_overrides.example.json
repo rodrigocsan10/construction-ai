@@ -1,0 +1,11 @@
+{
+  "_comment": "Manual overrides (win over AI). Or: python scripts/takeoff_framing.py --pdf data/Plans.pdf --estimate-lf --pages 1-12. Tags = plan_profile wall_types[].tag; LF through openings.",
+  "wall_linear_feet": {
+    "EW1": 0,
+    "EW2": 0,
+    "EW3": 420.5
+  },
+  "roof_deck_sf": 0,
+  "wall_height_ft": 10,
+  "lf_is_per_floor": false
+}

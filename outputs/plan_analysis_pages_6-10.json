@@ -1,0 +1,50 @@
+{
+  "_source_pdf": "/Users/rodrigo/construction-ai/data/Plans_AR.pdf",
+  "_pages_analyzed": "6-10",
+  "_total_pages_in_file": 22,
+  "project": {
+    "name": "MT. ARLINGTON BUILDING 2",
+    "type": "multifamily",
+    "total_sf": 0,
+    "floors": 5,
+    "scale": "1/8\" = 1'-0\" (floor plans), 1/4\" = 1'-0\" (unit plans)",
+    "scale_verified": true
+  },
+  "wall_types": [],
+  "doors": [],
+  "windows": [],
+  "structural": {
+    "hardware_brand": "",
+    "fastener_specs": "",
+    "shear_walls": "",
+    "beams_and_posts": [],
+    "floor_system": {
+      "type": "",
+      "spacing": "",
+      "notes": ""
+    },
+    "roof_system": {
+      "type": "TJI (Truss Joist I-Joist)",
+      "notes": "Sloped plywood deck over TJI"
+    },
+    "subfloor": {
+      "type": "Plywood deck",
+      "fastener": ""
+    }
+  },
+  "sheathing": {
+    "type": "",
+    "zip_tape_required": false,
+    "notes": ""
+  },
+  "finishes": {
+    "drywall_finish_level": 0,
+    "special_notes": "Ceilings: 5/8\" type X GWB on 1/2\" RC at 12\" o.c., 1-hour rated; finish paint. Fire-rated listed UL assemblies referenced for ceilings. All wallboard partitions receiving accessories (rails, panels, casework, etc.) to be provided with solid fire-retardant-treated (FRT) blocking/reinforcement."
+  },
+  "general_notes": {
+    "weather_barrier": "",
+    "fire_blocking": "Fire-retardant blocking required at all wallboard partitions receiving accessories (grab bars, casework, electrical panels, etc.); 3/4\" FRT plywood behind electrical panels.",
+    "special_blocking": "Wood blocking required for future grab bars at water closets/showers (per accessible design); blocking called for kitchen counters, wall accessories, and TV/backboards.",
+    "other_notes": "Refer to appliance schedule for basis-of-design. All dimensions to face of stud unless otherwise noted. Field verify blocking heights. Provide sealant at all locations where GWB wall types interface with unfinished CMU."
+  }
+}

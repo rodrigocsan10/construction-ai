@@ -1,0 +1,10 @@
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Large / generated artifacts (keep JSON/text in outputs if you want them tracked)
+data/*.pdf
+outputs/*.xlsx
+outputs/*.csv

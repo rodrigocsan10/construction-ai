@@ -1,0 +1,62 @@
+{
+    "trade_name": "Exterior Windows & Doors Installation",
+    "scope_includes": [
+      "exterior window installation",
+      "exterior door installation",
+      "sliding glass door assembly and installation",
+      "unloading and handling of all windows and doors"
+    ],
+    "scope_excludes": [
+      "furnishing windows or doors (always client-supplied)",
+      "interior doors"
+    ],
+  
+    "takeoff_rules": {
+      "source": "elevations + window schedule + door schedule",
+      "method": "count by type — no SF or LF calculations needed",
+      "note_brand": true,
+      "brand_note": "Brand from schedule affects difficulty — Anderson, Pella, Marvin etc."
+    },
+  
+    "scope": {
+      "materials": "never — 100% client furnished",
+      "labor": "always — labor only trade"
+    },
+  
+    "install_rates": {
+      "residential": {
+        "single_window": 25,
+        "double_window": 50,
+        "triple_window": 75,
+        "pattern_note": "$25 x number of panels"
+      },
+      "commercial_multifamily": {
+        "single_window": 50,
+        "double_window": 75,
+        "triple_window": 100,
+        "larger_than_triple_minimum": 150,
+        "sliding_glass_door_assembly": 250,
+        "sliding_door_note": "Minimum $250 each — assembly required (e.g. Anderson doors)"
+      }
+    },
+  
+    "handling_charges": {
+      "per_window": 20,
+      "per_exterior_door": 15,
+      "applies_to": "both residential and commercial",
+      "note": "Unloading and handling to install location",
+      "status": "market test — adjust based on feedback"
+    },
+  
+    "markup": {
+      "final_markup_percent": 20,
+      "applied_to": "total sub cost (install + handling)",
+      "material_markup": false,
+      "tax_on_materials": false
+    },
+  
+    "mobilization": {
+      "included": false,
+      "reason": "Subs handle their own logistics — no gas or toll charge on this trade"
+    }
+  }

@@ -1,0 +1,32 @@
+{
+  "_comment": "Rough material $ — update from supplier quotes. Keys match supplier_list item substrings or categories.",
+  "by_category": {
+    "lumber": 0.0,
+    "sheathing": 0.0,
+    "fasteners": 0.0,
+    "headers": 0.0,
+    "metal_studs": 0.0,
+    "prefab_engineered": 0.0,
+    "structural_review": 0.0
+  },
+  "by_item_keyword": {
+    "2x6x10": 14.5,
+    "2x4x10": 9.25,
+    "2x6x16 plate": 32.0,
+    "2x4x16 brace": 16.5,
+    "Wall sheathing": 28.0,
+    "Roof deck": 28.0,
+    "Framing nails": 48.0,
+    "Header assumption": 85.0,
+    "metal stud": 4.5,
+    "Truss / TJI": 0.0
+  },
+  "default_unit_cost": 25.0,
+  "labor_dollars_per_building_sf": {
+    "_comment": "When project.total_sf missing — use --building-sf; labor line = sf × rate. Roof tier adjusts residential/commercial from structural.roof_system.type in takeoff.",
+    "commercial_multifamily": 2.75,
+    "commercial_multifamily_rafter_multiplier": 1.12,
+    "residential": 7.5,
+    "residential_rafter_multiplier": 1.35
+  }
+}

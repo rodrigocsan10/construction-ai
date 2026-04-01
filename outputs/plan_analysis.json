@@ -1,0 +1,50 @@
+{
+  "_source_pdf": "/Users/rodrigo/construction-ai/data/Plans_AR.pdf",
+  "_pages_analyzed": "6-10",
+  "_total_pages_in_file": 22,
+  "project": {
+    "name": "MT. ARLINGTON BUILDING 2",
+    "type": "multifamily",
+    "total_sf": 0,
+    "floors": 5,
+    "scale": "1/8\" = 1'-0\" (overall plans), 1/4\" = 1'-0\" (enlarged plans)",
+    "scale_verified": true
+  },
+  "wall_types": [],
+  "doors": [],
+  "windows": [],
+  "structural": {
+    "hardware_brand": "",
+    "fastener_specs": "",
+    "shear_walls": "",
+    "beams_and_posts": [],
+    "floor_system": {
+      "type": "",
+      "spacing": "",
+      "notes": ""
+    },
+    "roof_system": {
+      "type": "",
+      "notes": ""
+    },
+    "subfloor": {
+      "type": "",
+      "fastener": ""
+    }
+  },
+  "sheathing": {
+    "type": "",
+    "zip_tape_required": false,
+    "notes": ""
+  },
+  "finishes": {
+    "drywall_finish_level": 0,
+    "special_notes": ""
+  },
+  "general_notes": {
+    "weather_barrier": "",
+    "fire_blocking": "Provide solid fire retardant treated (FRT) wood blocking and reinforcement within the framing at every wallboard partition that is indicated to receive accessories (toilet accessories, handicap rails, casework, wall mounted back-boards, etc.)",
+    "special_blocking": "Wood blocking required around water closets and showers for future grab bar mounting; 3/4\" FRT plywood behind electric panels; solid FRT blocking for toilet accessories, rails, casework, wall mounted back-boards.",
+    "other_notes": "Wall and flooring to be fully finished under removable sinks in kitchen and bathroom; center wall tile horizontally and vertically unless noted; provide high/low shelf and rod in walk-in closets in all units; ADA clearances and reinforcements for future grab bars required at Type A units."
+  }
+}
