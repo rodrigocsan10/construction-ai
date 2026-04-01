@@ -2,7 +2,8 @@
 """
 One-shot: merge → framing takeoff → price framing [→ drywall takeoff → price drywall].
 
-No OpenAI. For LF from PDF use takeoff_framing.py --estimate-lf first, then run_pipeline.
+No OpenAI in this script. For LF: pass --lf-json, or --use-sample-lf (demo LF + roof SF),
+or run takeoff_framing.py --estimate-lf against the PDF, then run_pipeline.
 """
 
 from __future__ import annotations
@@ -14,6 +15,7 @@ from pathlib import Path
 
 _ROOT = Path(__file__).resolve().parent.parent
 _PY = sys.executable
+_SAMPLE_LF = _ROOT / "config" / "examples" / "mt_arlington_sample_lf.json"
 
 
 def run(cmd: list[str]) -> None:
@@ -25,6 +27,11 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Merge → takeoff → price (local only).")
     ap.add_argument("--skip-merge", action="store_true")
     ap.add_argument("--lf-json", type=Path, default=None)
+    ap.add_argument(
+        "--use-sample-lf",
+        action="store_true",
+        help=f"Use {_SAMPLE_LF.name} for wall LF + roof deck (non-zero takeoff demo)",
+    )
     ap.add_argument("--building-sf", type=float, default=None)
     ap.add_argument("--round-trip-miles", type=float, default=0.0)
     ap.add_argument("--working-days", type=int, default=0)
@@ -49,9 +56,19 @@ def main() -> None:
     if not args.skip_merge:
         run([_PY, str(_ROOT / "scripts" / "merge_profiles.py")])
 
-    tf = [_PY, str(_ROOT / "scripts" / "takeoff_framing.py")]
     if args.lf_json:
-        tf.extend(["--lf-json", str(args.lf_json.resolve())])
+        lf_path: Path | None = args.lf_json
+    elif args.use_sample_lf:
+        if not _SAMPLE_LF.is_file():
+            print(f"Missing sample LF file: {_SAMPLE_LF}", flush=True)
+            raise SystemExit(1)
+        lf_path = _SAMPLE_LF
+    else:
+        lf_path = None
+
+    tf = [_PY, str(_ROOT / "scripts" / "takeoff_framing.py")]
+    if lf_path:
+        tf.extend(["--lf-json", str(lf_path.resolve())])
     run(tf)
 
     pf = [

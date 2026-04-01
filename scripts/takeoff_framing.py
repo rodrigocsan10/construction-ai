@@ -542,6 +542,15 @@ def run_takeoff(
     roof_sf = float(lf_by_tag.get("_roof_deck_sf", 0.0))
     sheathing_roof_sheets = math.ceil(roof_sf * waste_mult / sheet_sf) if roof_sf > 0 and sheet_sf > 0 else 0
 
+    prof_sh = profile.get("sheathing")
+    profile_suggests_zip = False
+    if isinstance(prof_sh, dict):
+        profile_suggests_zip = bool(prof_sh.get("zip_tape_required")) or (
+            "zip" in str(prof_sh.get("type", "")).lower()
+        )
+    elif prof_sh:
+        profile_suggests_zip = "zip" in str(prof_sh).lower()
+
     header_rules = trade.get("header_rules") or {}
     disclaimer = str(header_rules.get("disclaimer_text", ""))
     header_lines: list[dict[str, Any]] = []
@@ -608,6 +617,7 @@ def run_takeoff(
             "roof_deck_sf": roof_sf,
             "roof_sheathing_sheets_4x8_equiv": sheathing_roof_sheets,
             "profile_sheathing_note": profile.get("sheathing"),
+            "profile_suggests_zip_tape_roller": profile_suggests_zip,
         },
         "headers_from_doors": header_lines,
         "structural_summary": structural,

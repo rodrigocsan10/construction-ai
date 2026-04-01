@@ -20,12 +20,12 @@
       "stud_size_spec": "6\" metal",
       "framing_class": "metal",
       "spacing_inches": 24,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
+      "linear_feet": 380.0,
+      "linear_feet_source": "lf_json_override",
       "plate_lumber_lf": 0.0,
-      "stud_count": 0,
+      "stud_count": 210,
       "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "notes": ""
     },
     {
       "tag": "EW2",
@@ -33,12 +33,12 @@
       "stud_size_spec": "6\" metal",
       "framing_class": "metal",
       "spacing_inches": 24,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
+      "linear_feet": 220.0,
+      "linear_feet_source": "lf_json_override",
       "plate_lumber_lf": 0.0,
-      "stud_count": 0,
+      "stud_count": 122,
       "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "notes": ""
     },
     {
       "tag": "EW3",
@@ -46,12 +46,12 @@
       "stud_size_spec": "2x6 wood",
       "framing_class": "wood_2x6",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
-      "plate_lumber_lf": 0.0,
-      "stud_count": 0,
-      "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "linear_feet": 450.0,
+      "linear_feet_source": "lf_json_override",
+      "plate_lumber_lf": 1350.0,
+      "stud_count": 372,
+      "bracing_2x4x16_count": 57,
+      "notes": ""
     },
     {
       "tag": "EW3.1",
@@ -59,12 +59,12 @@
       "stud_size_spec": "2x6 wood",
       "framing_class": "wood_2x6",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
-      "plate_lumber_lf": 0.0,
-      "stud_count": 0,
-      "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "linear_feet": 120.0,
+      "linear_feet_source": "lf_json_override",
+      "plate_lumber_lf": 360.0,
+      "stud_count": 99,
+      "bracing_2x4x16_count": 15,
+      "notes": ""
     },
     {
       "tag": "EW4",
@@ -72,12 +72,12 @@
       "stud_size_spec": "2x6 wood",
       "framing_class": "wood_2x6",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
-      "plate_lumber_lf": 0.0,
-      "stud_count": 0,
-      "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "linear_feet": 510.0,
+      "linear_feet_source": "lf_json_override",
+      "plate_lumber_lf": 1530.0,
+      "stud_count": 421,
+      "bracing_2x4x16_count": 64,
+      "notes": ""
     },
     {
       "tag": "EW4.1",
@@ -85,12 +85,12 @@
       "stud_size_spec": "2x6 wood",
       "framing_class": "wood_2x6",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
-      "plate_lumber_lf": 0.0,
-      "stud_count": 0,
-      "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "linear_feet": 90.0,
+      "linear_feet_source": "lf_json_override",
+      "plate_lumber_lf": 270.0,
+      "stud_count": 75,
+      "bracing_2x4x16_count": 12,
+      "notes": ""
     },
     {
       "tag": "EW5",
@@ -98,12 +98,12 @@
       "stud_size_spec": "2x6 wood",
       "framing_class": "wood_2x6",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
-      "plate_lumber_lf": 0.0,
-      "stud_count": 0,
-      "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "linear_feet": 200.0,
+      "linear_feet_source": "lf_json_override",
+      "plate_lumber_lf": 600.0,
+      "stud_count": 166,
+      "bracing_2x4x16_count": 25,
+      "notes": ""
     },
     {
       "tag": "EW5.1",
@@ -111,12 +111,12 @@
       "stud_size_spec": "2x6 wood",
       "framing_class": "wood_2x6",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
-      "plate_lumber_lf": 0.0,
-      "stud_count": 0,
-      "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "linear_feet": 60.0,
+      "linear_feet_source": "lf_json_override",
+      "plate_lumber_lf": 180.0,
+      "stud_count": 50,
+      "bracing_2x4x16_count": 8,
+      "notes": ""
     },
     {
       "tag": "EW6",
@@ -124,12 +124,12 @@
       "stud_size_spec": "8\" CMU",
       "framing_class": "masonry",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
+      "linear_feet": 180.0,
+      "linear_feet_source": "lf_json_override",
       "plate_lumber_lf": 0.0,
       "stud_count": 0,
       "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "notes": ""
     },
     {
       "tag": "EW7",
@@ -137,12 +137,12 @@
       "stud_size_spec": "8\" CMU",
       "framing_class": "masonry",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
+      "linear_feet": 140.0,
+      "linear_feet_source": "lf_json_override",
       "plate_lumber_lf": 0.0,
       "stud_count": 0,
       "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "notes": ""
     },
     {
       "tag": "EW8",
@@ -150,12 +150,12 @@
       "stud_size_spec": "concrete",
       "framing_class": "masonry",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
+      "linear_feet": 95.0,
+      "linear_feet_source": "lf_json_override",
       "plate_lumber_lf": 0.0,
       "stud_count": 0,
       "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "notes": ""
     },
     {
       "tag": "EW9",
@@ -163,40 +163,41 @@
       "stud_size_spec": "concrete",
       "framing_class": "masonry",
       "spacing_inches": 16,
-      "linear_feet": 0.0,
-      "linear_feet_source": "missing",
+      "linear_feet": 110.0,
+      "linear_feet_source": "lf_json_override",
       "plate_lumber_lf": 0.0,
       "stud_count": 0,
       "bracing_2x4x16_count": 0,
-      "notes": "No LF \u2014 run with --estimate-lf or add --lf-json / profile.linear_feet"
+      "notes": ""
     }
   ],
   "totals": {
-    "total_wall_lf": 0,
-    "total_plate_lf": 0,
-    "total_studs": 0,
-    "total_bracing_sticks": 0,
+    "total_wall_lf": 2555,
+    "total_plate_lf": 4290,
+    "total_studs": 1515,
+    "total_bracing_sticks": 181,
     "wood_2x4_studs": 0,
-    "wood_2x6_studs": 0,
-    "metal_stud_walls_lf": 0,
-    "framing_nail_count_est": 0.0,
-    "framing_nail_boxes_4000_est": 0
+    "wood_2x6_studs": 1183,
+    "metal_stud_walls_lf": 600,
+    "framing_nail_count_est": 25550.0,
+    "framing_nail_boxes_4000_est": 7
   },
   "sheathing": {
-    "exterior_framed_wall_lf": 0.0,
-    "gross_exterior_wall_sf": 0.0,
+    "exterior_framed_wall_lf": 2030.0,
+    "gross_exterior_wall_sf": 20300.0,
     "opening_sf_subtracted": 2921.75,
-    "net_exterior_wall_sf": 0.0,
+    "net_exterior_wall_sf": 17378.25,
     "sheet_size_sf": 32.0,
     "waste_percent": 12.0,
-    "wall_sheathing_sheets_4x8_equiv": 0,
-    "roof_deck_sf": 0.0,
-    "roof_sheathing_sheets_4x8_equiv": 0,
+    "wall_sheathing_sheets_4x8_equiv": 609,
+    "roof_deck_sf": 18500.0,
+    "roof_sheathing_sheets_4x8_equiv": 648,
     "profile_sheathing_note": {
       "notes": "ZIP sheathing for Rated Assemblies EW4, EW5 and similar; tape and roller are required for all ZIP joints",
       "type": "ZIP (for some walls), gypsum sheathing, polyiso rigid, CMU",
       "zip_tape_required": true
-    }
+    },
+    "profile_suggests_zip_tape_roller": true
   },
   "headers_from_doors": [
     {
@@ -333,6 +334,41 @@
   },
   "supplier_list": [
     {
+      "category": "lumber",
+      "item": "2x6x10 KD stud (verify grade/spec)",
+      "quantity": 1183,
+      "unit": "EA",
+      "notes": "From stud count for 2x6 wall types"
+    },
+    {
+      "category": "lumber",
+      "item": "2x6x16 plate / sill (or cut from stock)",
+      "quantity": 269,
+      "unit": "EA",
+      "notes": "Total plate LF \u2248 4290 (\u00f716' sticks)"
+    },
+    {
+      "category": "lumber",
+      "item": "2x4x16 brace / let-in (per KB rule)",
+      "quantity": 181,
+      "unit": "EA",
+      "notes": "1 per 8 LF of wall (wood walls)"
+    },
+    {
+      "category": "sheathing",
+      "item": "Wall sheathing 4x8 equiv (OSB/CDX/ZIP per spec)",
+      "quantity": 609,
+      "unit": "SHT",
+      "notes": "{'notes': 'ZIP sheathing for Rated Assemblies EW4, EW5 and similar; tape and roller are required for all ZIP joints', 'type': 'ZIP (for some walls), gypsum sheathing, polyiso rigid, CMU', 'zip_tape_required': True}"
+    },
+    {
+      "category": "sheathing",
+      "item": "Roof deck 4x8 equiv",
+      "quantity": 648,
+      "unit": "SHT",
+      "notes": "From roof_deck_sf (AI estimate or lf-json)"
+    },
+    {
       "category": "prefab_engineered",
       "item": "Truss / TJI / engineered floor package \u2014 formal supplier quote required",
       "quantity": 1,
@@ -340,11 +376,18 @@
       "notes": "Attach plans; KB: do not self-price trusses without shop drawings"
     },
     {
+      "category": "metal_studs",
+      "item": "Metal stud/track system (order from supplier with gauge & depth)",
+      "quantity": 600,
+      "unit": "LF wall",
+      "notes": "Stud count in takeoff JSON \u2014 convert to LF packages per supplier"
+    },
+    {
       "category": "fasteners",
       "item": "Framing nails (8d common / per engineer)",
-      "quantity": 0,
+      "quantity": 7,
       "unit": "BOX (4000)",
-      "notes": "~0 nails est"
+      "notes": "~25550 nails est"
     },
     {
       "category": "headers",

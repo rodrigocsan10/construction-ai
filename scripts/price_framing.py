@@ -24,6 +24,8 @@ import math
 from pathlib import Path
 from typing import Any
 
+from pricing_utils import retainage_reference, zip_tape_roller_addon_framing
+
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 _DEFAULT_TAKEOFF = _PROJECT_ROOT / "outputs" / "takeoff_framing.json"
 _OUTPUT_DIR = _PROJECT_ROOT / "outputs"
@@ -248,8 +250,9 @@ def price_takeoff(
 
     b_amt, b_detail = blockout_usd(trade, working_days, ptype, include_blockout)
     eq_amt, eq_detail = equipment_allowance_usd(equipment_cfg, equipment_months)
+    zip_amt, zip_detail = zip_tape_roller_addon_framing(takeoff, trade)
 
-    subtotal_pre_ops = material_to_client + labor_subtotal + mobilization + b_amt + eq_amt
+    subtotal_pre_ops = material_to_client + labor_subtotal + mobilization + b_amt + eq_amt + zip_amt
 
     oh = float(company.get("overhead_percent", 0) or 0)
     pr = float(company.get("profit_percent", 0) or 0)
@@ -257,6 +260,7 @@ def price_takeoff(
     oh_d = subtotal_pre_ops * (oh / 100.0)
     profit_d = (subtotal_pre_ops + oh_d) * (pr / 100.0) if pr else 0.0
     grand_total = subtotal_pre_ops + oh_d + profit_d
+    ret_ref = retainage_reference(company, grand_total)
 
     return {
         "inputs": {
@@ -285,13 +289,14 @@ def price_takeoff(
         },
         "blockout_crew": {"usd": round(b_amt, 2), **b_detail},
         "equipment_allowance": {"usd": round(eq_amt, 2), **eq_detail},
+        "zip_tape_roller_labor": {"usd": round(zip_amt, 2), **zip_detail},
         "mobilization": round(mobilization, 2),
         "overhead_usd": round(oh_d, 2),
         "profit_usd": round(profit_d, 2),
         "grand_total_client": round(grand_total, 2),
         "priced_supplier_lines": priced_lines,
         "benchmarks_reference": trade.get("pricing_benchmarks"),
-        "retainage_percent_note": company.get("retainage_percent"),
+        "retainage_reference": ret_ref,
     }
 
 
@@ -317,6 +322,9 @@ def write_xlsx(path: Path, priced: dict[str, Any]) -> None:
     eq = priced.get("equipment_allowance") or {}
     if float(eq.get("usd") or 0) > 0:
         rows_sum.append({"item": "Equipment allowance (monthly × months)", "usd": eq["usd"]})
+    zt = priced.get("zip_tape_roller_labor") or {}
+    if float(zt.get("usd") or 0) > 0:
+        rows_sum.append({"item": "ZIP tape + roller labor (est. / wall sheet)", "usd": zt["usd"]})
     rows_sum.extend(
         [
             {"item": "Overhead", "usd": priced["overhead_usd"]},
@@ -324,6 +332,17 @@ def write_xlsx(path: Path, priced: dict[str, Any]) -> None:
             {"item": "GRAND TOTAL", "usd": priced["grand_total_client"]},
         ]
     )
+    rr = priced.get("retainage_reference") or {}
+    if float(rr.get("typical_holdback_usd") or 0) > 0:
+        rows_sum.append(
+            {
+                "item": f"Retainage reference ({rr.get('retainage_percent')}%)",
+                "usd": rr.get("typical_holdback_usd"),
+            }
+        )
+        rows_sum.append(
+            {"item": "Net if retainage held (informational)", "usd": rr.get("net_if_retainage_held_usd")}
+        )
     summary = pd.DataFrame(rows_sum)
     with pd.ExcelWriter(path, engine="openpyxl") as w:
         pd.DataFrame(rows).to_excel(w, sheet_name="Line items", index=False)

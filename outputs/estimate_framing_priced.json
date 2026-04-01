@@ -14,8 +14,8 @@
       "sales_tax_percent": 6.625,
       "tax_exempt": false,
       "scope_labor_and_material": true,
-      "round_trip_miles": 80.0,
-      "working_days": 60,
+      "round_trip_miles": 0.0,
+      "working_days": 0,
       "building_sf_used": 55000.0,
       "building_sf_source": "cli",
       "labor_dollars_per_building_sf": 2.75,
@@ -23,37 +23,86 @@
       "roof_labor_tier": "truss_engineered"
     },
     "material": {
-      "raw_subtotal": 12070.0,
-      "sales_tax_on_materials": 799.64,
-      "after_tax": 12869.64,
-      "markup_dollars": 1415.66,
-      "material_to_client": 14285.3
+      "raw_subtotal": 79050.0,
+      "sales_tax_on_materials": 5237.06,
+      "after_tax": 84287.06,
+      "markup_dollars": 9271.58,
+      "material_to_client": 93558.64
     },
     "labor_framing_est": {
       "subtotal": 151250.0,
       "note": "LF-based labor not modeled \u2014 $/building SF from framing_unit_costs.json; roof tier from takeoff floor_roof_estimating"
     },
     "blockout_crew": {
-      "usd": 20250.0,
-      "applied": true,
-      "crew_equivalent": 2.5,
-      "days": 30,
-      "hourly": 30.0,
-      "hours_per_day": 9.0,
-      "note": "KB: blockout \u2248 half of framing duration"
+      "usd": 0.0,
+      "applied": false
     },
     "equipment_allowance": {
-      "usd": 10000.0,
-      "applied": true,
-      "months": 2.0,
-      "monthly_rate": 5000.0,
-      "note": "Primary aerial/monthly allowance \u2014 calibrate to rental quote"
+      "usd": 0.0,
+      "applied": false
     },
-    "mobilization": 2400.0,
-    "overhead_usd": 19818.53,
-    "profit_usd": 21800.38,
-    "grand_total_client": 239804.21,
+    "zip_tape_roller_labor": {
+      "usd": 1522.5,
+      "applied": true,
+      "wall_sheets": 609,
+      "per_sheet_usd": 2.5,
+      "note": "Extra install labor for ZIP joints (tape + roller) when profile sheathing indicates ZIP or zip_tape_required \u2014 tune with sub quotes"
+    },
+    "mobilization": 0.0,
+    "overhead_usd": 24633.11,
+    "profit_usd": 27096.43,
+    "grand_total_client": 298060.68,
     "priced_supplier_lines": [
+      {
+        "category": "lumber",
+        "item": "2x6x10 KD stud (verify grade/spec)",
+        "quantity": 1183,
+        "unit": "EA",
+        "notes": "From stud count for 2x6 wall types",
+        "unit_cost_usd": 14.5,
+        "pricing_rule": "keyword:2x6x10",
+        "extension_usd": 17153.5
+      },
+      {
+        "category": "lumber",
+        "item": "2x6x16 plate / sill (or cut from stock)",
+        "quantity": 269,
+        "unit": "EA",
+        "notes": "Total plate LF \u2248 4290 (\u00f716' sticks)",
+        "unit_cost_usd": 32.0,
+        "pricing_rule": "keyword:2x6x16 plate",
+        "extension_usd": 8608.0
+      },
+      {
+        "category": "lumber",
+        "item": "2x4x16 brace / let-in (per KB rule)",
+        "quantity": 181,
+        "unit": "EA",
+        "notes": "1 per 8 LF of wall (wood walls)",
+        "unit_cost_usd": 16.5,
+        "pricing_rule": "keyword:2x4x16 brace",
+        "extension_usd": 2986.5
+      },
+      {
+        "category": "sheathing",
+        "item": "Wall sheathing 4x8 equiv (OSB/CDX/ZIP per spec)",
+        "quantity": 609,
+        "unit": "SHT",
+        "notes": "{'notes': 'ZIP sheathing for Rated Assemblies EW4, EW5 and similar; tape and roller are required for all ZIP joints', 'type': 'ZIP (for some walls), gypsum sheathing, polyiso rigid, CMU', 'zip_tape_required': True}",
+        "unit_cost_usd": 28.0,
+        "pricing_rule": "keyword:Wall sheathing",
+        "extension_usd": 17052.0
+      },
+      {
+        "category": "sheathing",
+        "item": "Roof deck 4x8 equiv",
+        "quantity": 648,
+        "unit": "SHT",
+        "notes": "From roof_deck_sf (AI estimate or lf-json)",
+        "unit_cost_usd": 28.0,
+        "pricing_rule": "keyword:Roof deck",
+        "extension_usd": 18144.0
+      },
       {
         "category": "prefab_engineered",
         "item": "Truss / TJI / engineered floor package \u2014 formal supplier quote required",
@@ -65,14 +114,24 @@
         "extension_usd": 0.0
       },
       {
+        "category": "metal_studs",
+        "item": "Metal stud/track system (order from supplier with gauge & depth)",
+        "quantity": 600,
+        "unit": "LF wall",
+        "notes": "Stud count in takeoff JSON \u2014 convert to LF packages per supplier",
+        "unit_cost_usd": 4.5,
+        "pricing_rule": "keyword:metal stud",
+        "extension_usd": 2700.0
+      },
+      {
         "category": "fasteners",
         "item": "Framing nails (8d common / per engineer)",
-        "quantity": 0,
+        "quantity": 7,
         "unit": "BOX (4000)",
-        "notes": "~0 nails est",
+        "notes": "~25550 nails est",
         "unit_cost_usd": 48.0,
         "pricing_rule": "keyword:Framing nails",
-        "extension_usd": 0.0
+        "extension_usd": 336.0
       },
       {
         "category": "headers",
@@ -183,6 +242,12 @@
         "scope": "usually material and labor"
       }
     },
-    "retainage_percent_note": 10
+    "retainage_reference": {
+      "retainage_percent": 10.0,
+      "typical_holdback_usd": 29806.07,
+      "grand_total_client": 298060.68,
+      "net_if_retainage_held_usd": 268254.61,
+      "note": "Not deducted from grand total \u2014 typical GC holdback per KB."
+    }
   }
 }

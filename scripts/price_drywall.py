@@ -19,6 +19,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+from pricing_utils import retainage_reference
+
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 _DEFAULT_TAKEOFF = _PROJECT_ROOT / "outputs" / "takeoff_drywall.json"
 _TRADE = _PROJECT_ROOT / "config" / "Trades" / "drywall_insulation.json"
@@ -192,6 +194,7 @@ def main() -> None:
     tax_d = 0.0 if args.tax_exempt else taxable * (tax / 100.0)
 
     grand = taxable + tax_d
+    ret_ref = retainage_reference(company, grand)
 
     summary_rows = [
         {"line": "Hang + finish (per sheet) × total sheets", "detail": f"{sheets} @ ${labor_per_sheet:.2f}/sheet", "usd": round(sheets * labor_per_sheet, 2)},
@@ -231,6 +234,21 @@ def main() -> None:
         {"line": "Sales tax", "detail": f"{tax}%" if not args.tax_exempt else "exempt", "usd": round(tax_d, 2)},
         {"line": "GRAND TOTAL", "detail": "", "usd": round(grand, 2)},
     ]
+    if float(ret_ref.get("typical_holdback_usd") or 0) > 0:
+        summary_rows.extend(
+            [
+                {
+                    "line": f"Retainage reference ({ret_ref.get('retainage_percent', 0)}%)",
+                    "detail": str(ret_ref.get("note", ""))[:80],
+                    "usd": float(ret_ref["typical_holdback_usd"]),
+                },
+                {
+                    "line": "Net if retainage held (informational)",
+                    "detail": "",
+                    "usd": float(ret_ref["net_if_retainage_held_usd"]),
+                },
+            ]
+        )
 
     priced = {
         "inputs": {
@@ -257,6 +275,7 @@ def main() -> None:
             "grand_total": round(grand, 2),
         },
         "summary_table": summary_rows,
+        "retainage_reference": ret_ref,
     }
 
     out = args.out

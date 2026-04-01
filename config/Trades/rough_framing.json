@@ -47,6 +47,8 @@
       "labor_per_sheet_low": 8,
       "labor_per_sheet_high": 9,
       "subtract_windows_and_doors": true,
+      "zip_tape_roller_addon_per_wall_sheet_usd": 2.5,
+      "zip_tape_roller_note": "Extra install labor for ZIP joints (tape + roller) when profile sheathing indicates ZIP or zip_tape_required — tune with sub quotes",
       "types": {
         "osb": { "description": "OSB 7/16", "cost_tier": "low" },
         "cdx": { "description": "CDX plywood", "cost_tier": "mid" },

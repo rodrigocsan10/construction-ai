@@ -12,10 +12,19 @@ import json
 from pathlib import Path
 from typing import Any
 
+from pricing_utils import retainage_reference
+
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 _DEFAULT_TAKEOFF = _PROJECT_ROOT / "outputs" / "takeoff_windows_doors.json"
 _TRADE = _PROJECT_ROOT / "config" / "Trades" / "windows_doors.json"
 _OUTPUT_DIR = _PROJECT_ROOT / "outputs"
+
+
+def company_path(root: Path) -> Path:
+    spaced = root / "config" / " company.json"
+    if spaced.is_file():
+        return spaced
+    return root / "config" / "company.json"
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -137,12 +146,25 @@ def main() -> None:
     markup_amt = sub * (markup_pct / 100.0)
     grand = sub + markup_amt
 
+    company = load_json(company_path(_PROJECT_ROOT))
+    ret_ref = retainage_reference(company, grand)
+
     summary = [
         {"line": "Install subtotal", "usd": round(install_sub, 2)},
         {"line": f"Handling ({tw} win @ {h_win} + {td} dr @ {h_door})", "usd": round(handling, 2)},
         {"line": f"Markup ({markup_pct}%)", "usd": round(markup_amt, 2)},
         {"line": "GRAND TOTAL (labor package)", "usd": round(grand, 2)},
     ]
+    if float(ret_ref.get("typical_holdback_usd") or 0) > 0:
+        summary.extend(
+            [
+                {
+                    "line": f"Retainage reference ({ret_ref.get('retainage_percent')}%)",
+                    "usd": float(ret_ref["typical_holdback_usd"]),
+                },
+                {"line": "Net if retainage held (informational)", "usd": float(ret_ref["net_if_retainage_held_usd"])},
+            ]
+        )
 
     priced = {
         "inputs": {
@@ -159,6 +181,7 @@ def main() -> None:
             "grand_total": round(grand, 2),
         },
         "summary_table": summary,
+        "retainage_reference": ret_ref,
     }
 
     out = args.out

@@ -383,7 +383,9 @@ construction-ai/
 ---
 
 ## Next improvements (backlog)
+- **Runbook:** see repo root `README.md` (setup, `--use-sample-lf`, pipeline flags, Git notes).
 - Parse structural sheets for **per-type hardware counts** (Simpson) and shear plywood SF/nailing
-- **ZIP / sheathing type**-specific labor adders in takeoff or pricing
 - **Residential** end-to-end test with `project.type: residential` and rafter roof string in `structural.roof_system.type`
 - Richer **proposal** PDF (photos, payment schedule) — today: `outputs/proposal_draft.md`
+- **ZIP / sheathing:** framing price adds ZIP tape+roller labor when profile flags ZIP (`rough_framing.json` → `sheathing_rules.zip_tape_roller_addon_per_wall_sheet_usd`).
+- **Retainage:** shown on priced outputs as `retainage_reference` (informational; from `company.json`).
