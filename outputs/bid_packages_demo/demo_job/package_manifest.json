@@ -1,0 +1,9 @@
+{
+  "package_name": "demo_job",
+  "created_at": "2026-04-02T00:24:05Z",
+  "primary_pdf": "proposal_test_A_lump_client.pdf",
+  "pdf_sha256_16": "33e782f84809db02",
+  "photos": [],
+  "proposal_json": "proposal_input.json",
+  "readme": "Professional bid package: PDF is the executed-style proposal; photos are optional job context."
+}

@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "document_title": "Proposal",
+    "validity_days": 30,
+    "bid_mode": "lump_sum",
+    "confidentiality": "client"
+  },
+  "company": {
+    "name": "Construction AI",
+    "address": "123 Builder Lane, Burlington, NJ 08075",
+    "phone": "(555) 010-0000",
+    "email": "estimating@example.com",
+    "logo_path": ""
+  },
+  "project": {
+    "name": "TEST A — Lump sum / client (must not show line items)",
+    "owner": "Sample Owner LLC",
+    "gc": "Sample GC Inc."
+  },
+  "scope_paragraphs": [
+    "Furnish and install rough carpentry and sheathing per plans dated 01/01/2026, Division 06 scope only.",
+    "Excludes MEP, fire sprinkler, and finishes unless noted on drawing SK-0.",
+    "Field verify all dimensions prior to fabrication; notify GC of discrepancies within one business day."
+  ],
+  "investment": {
+    "lump_sum": 487500.0,
+    "line_items": [
+      { "label": "INTERNAL TRAP — Framing labor burden detail", "amount": 120000 },
+      { "label": "INTERNAL TRAP — Secret margin bucket", "amount": 45000 }
+    ]
+  },
+  "payment_schedule": [
+    { "label": "Contract execution / deposit", "pct": 10, "client_visible": true },
+    { "label": "Mobilization & material deposit", "pct": 25, "client_visible": true },
+    { "label": "Rough-in milestone", "pct": 25, "client_visible": true },
+    { "label": "Dry-in / sheathing complete", "pct": 15, "client_visible": true },
+    { "label": "Progress — interior partitions", "pct": 10, "client_visible": true },
+    { "label": "Punch & closeout reserve", "pct": 5, "client_visible": true },
+    { "label": "Final upon substantial completion", "pct": 10, "client_visible": true },
+    { "label": "INTERNAL ONLY — bonding float", "pct": 0, "client_visible": false }
+  ],
+  "tax": { "jurisdiction": "NJ" },
+  "assumptions": [
+    "NJ sales tax treatment per tax note; valid exemption certificates required before invoicing exempt work.",
+    "Schedule assumes clear site access Monday–Friday; overtime is extra unless pre-approved in writing."
+  ],
+  "confidential_sections": {
+    "internal_notes": [
+      "This note must NOT appear on scenario A PDF (client lump-sum mode)."
+    ]
+  }
+}

@@ -3,7 +3,8 @@ Example inputs for the pipeline
 
 mt_arlington_sample_lf.json
   Demo wall LF by tag + roof_deck_sf + wall_height_ft for MT. Arlington–style profiles.
-  Use with:  python scripts/run_pipeline.py --use-sample-lf ...
+  Use with:  python scripts/run_pipeline.py --use-sample-lf --building-sf 55000
+              (add other flags as needed; do not type literal ...)
   Or:        python scripts/takeoff_framing.py --lf-json config/examples/mt_arlington_sample_lf.json
 
 wall_lf_overrides.example.json

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "document_title": "Proposal",
+    "validity_days": 15,
+    "bid_mode": "itemized",
+    "confidentiality": "client"
+  },
+  "company": {
+    "name": "Construction AI",
+    "address": "123 Builder Lane, Burlington, NJ 08075",
+    "phone": "(555) 010-0000",
+    "email": "estimating@example.com",
+    "logo_path": ""
+  },
+  "project": {
+    "name": "TEST C — PA tax note + 15-day validity + itemized client",
+    "owner": "Keystone Development",
+    "gc": "PA Builder Partners"
+  },
+  "scope_paragraphs": [
+    "Rough carpentry through dry-in for Type V-B podium per structural sheets S-100 series.",
+    "Coordinate shaft walls with fireproofing trade; our work stops at substrate for rated coatings."
+  ],
+  "investment": {
+    "lump_sum": 329750.5,
+    "line_items": [
+      { "label": "Labor package", "amount": 188000 },
+      { "label": "Materials & sales-taxable supplies", "amount": 141750.5 }
+    ]
+  },
+  "payment_schedule": [
+    { "label": "Deposit", "pct": 10, "client_visible": true },
+    { "label": "Start / first delivery", "pct": 20, "client_visible": true },
+    { "label": "Mid-project", "pct": 20, "client_visible": true },
+    { "label": "Dry-in milestone", "pct": 20, "client_visible": true },
+    { "label": "Progress billing", "pct": 15, "client_visible": true },
+    { "label": "Substantial completion", "pct": 10, "client_visible": true },
+    { "label": "Final release", "pct": 5, "client_visible": true }
+  ],
+  "tax": { "jurisdiction": "PA" },
+  "assumptions": [
+    "Volatile lumber market — 15-day validity; re-quote after expiration.",
+    "PA tax verbiage applies; confirm local use tax if materials sourced out of state."
+  ],
+  "confidential_sections": {
+    "internal_notes": ["Should not print on client itemized PA PDF."]
+  }
+}

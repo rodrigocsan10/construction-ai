@@ -333,7 +333,10 @@ construction-ai/
 │    ├── price_windows_doors.py
 │    ├── run_pipeline.py
 │    ├── generate_proposal.py
+│    ├── build_proposal_pdf.py
 │    ├── supplier_email.py
+│    ├── crm_cli.py / lead_pipeline.py / market_intel.py / analytics_ingest.py
+│    ├── render_outbound_email.py / email_sequence.py / bid_package.py / crm_webhook.py
 │    └── extract_pdf.py        (legacy path)
 ├── data/                      (plan PDFs)
 ├── outputs/                   (generated JSON, XLSX, CSV, proposal draft)
@@ -350,6 +353,8 @@ construction-ai/
 - ✅ Drywall price: sheet + insulation + KB extras + optional mobilization (`--mobilization-round-trip-miles`, `--mobilization-working-days`)
 - ✅ Windows/doors takeoff + price (KB rates, handling, 20% markup)
 - ✅ Draft proposal (`generate_proposal.py`) and supplier RFQ email body (`supplier_email.py`)
+- ✅ **Branded 5-page proposal PDF** from JSON (`build_proposal_pdf.py`; schema `config/proposal_input.schema.md`)
+- ✅ **Ops scaffold (local):** CRM SQLite (`crm_cli.py`), CSV lead import + filters (`lead_pipeline.py`), bid outcome / $/SF rollup (`market_intel.py`), GA4 CSV ingest (`analytics_ingest.py`), template emails + optional SMTP (`render_outbound_email.py`, `email_sequence.py`, `smtp_util` + `email_proposal.py`), bid folder packager (`bid_package.py`), webhook POST (`crm_webhook.py`). Demo: `scripts/run_ops_demo.py`
 - 🔲 Retainage and OH/profit rules: framing applies company overhead/profit on subtotal — tune to match how you bid
 - 🔲 Full floor joist counts from spans (only guidance + supplier-quote path unless dimensional floor called out in profile)
 
@@ -369,16 +374,29 @@ construction-ai/
 
 ---
 
-## FUTURE MODULES (after launch trades are working)
+## OPERATIONS & GROWTH (scaffold in repo)
 
-1. **Steel fabrication & erection** — deferred
-2. **Concrete work** — deferred
-3. **Lead pipeline** — PlanHub email integration, filter by trade/size/location
-4. **CRM** — lead tracking, qualification
-5. **Email automation** — auto-send proposals, follow-up sequences, supplier price requests
-6. **Bid generator** — professional proposals with job photos, payment schedule
-7. **Market intelligence** — track won/lost bids, $/SF trends
-8. **Website / Google Ads analytics** — lead source tracking
+| Capability | Scripts / config |
+|------------|------------------|
+| Lead pipeline (CSV) | `lead_pipeline.py import`, `config/lead_pipeline.example.json`, sample `config/examples/planhub_export_sample.csv` |
+| CRM | `crm_cli.py` (stages, notes, UTM fields); DB `data/crm/ops.sqlite3` (optional `OPS_SQLITE_PATH` for tests) |
+| Email | `render_outbound_email.py`, `email_sequence.py`, `config/email_templates/`, `email_proposal.py` (SMTP `.env`) |
+| Bid package | `build_proposal_pdf.py` then `bid_package.py` (PDF + optional photos + `package_manifest.json`) |
+| Market intel | `market_intel.py record` / `report` |
+| Web analytics | `analytics_ingest.py ga-csv` + `lead-utm` / `crm_cli utm` to tie sessions to leads |
+| External CRM | `crm_webhook.py` when `CRM_WEBHOOK_URL` is set |
+
+**Not automated yet:** live PlanHub API pull (use CSV export until API is wired), scheduled sends, full HubSpot/Airtable two-way sync.
+
+---
+
+## FUTURE MODULES (deferred or partial)
+
+1. **Steel fabrication & erection** — deferred (explicitly out of current scope)
+2. **Concrete work** — deferred (explicitly out of current scope)
+3. **Deeper integrations** — PlanHub (or vendor) **API** sync, OAuth, error retry queues
+4. **Full CRM sync** — bi-directional HubSpot / Airtable / Notion beyond one-way webhook POST
+5. **Email automation** — scheduled/cron follow-ups, open tracking (build on `email_sequence` + SMTP)
 
 ---
 
@@ -386,6 +404,6 @@ construction-ai/
 - **Runbook:** see repo root `README.md` (setup, `--use-sample-lf`, pipeline flags, Git notes).
 - Parse structural sheets for **per-type hardware counts** (Simpson) and shear plywood SF/nailing
 - **Residential** end-to-end test with `project.type: residential` and rafter roof string in `structural.roof_system.type`
-- Richer **proposal** PDF (photos, payment schedule) — today: `outputs/proposal_draft.md`
+- **Proposal deliverable:** `generate_proposal.py` → `proposal_draft.md` + optional simple **`--pdf`**; **`build_proposal_pdf.py`** → branded 5-page PDF from JSON. **`bid_package.py`** bundles PDF + optional site photos + manifest. Photos / legal review still manual.
 - **ZIP / sheathing:** framing price adds ZIP tape+roller labor when profile flags ZIP (`rough_framing.json` → `sheathing_rules.zip_tape_roller_addon_per_wall_sheet_usd`).
 - **Retainage:** shown on priced outputs as `retainage_reference` (informational; from `company.json`).

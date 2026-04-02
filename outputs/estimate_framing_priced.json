@@ -14,8 +14,8 @@
       "sales_tax_percent": 6.625,
       "tax_exempt": false,
       "scope_labor_and_material": true,
-      "round_trip_miles": 0.0,
-      "working_days": 0,
+      "round_trip_miles": 80.0,
+      "working_days": 60,
       "building_sf_used": 55000.0,
       "building_sf_source": "cli",
       "labor_dollars_per_building_sf": 2.75,
@@ -48,10 +48,10 @@
       "per_sheet_usd": 2.5,
       "note": "Extra install labor for ZIP joints (tape + roller) when profile sheathing indicates ZIP or zip_tape_required \u2014 tune with sub quotes"
     },
-    "mobilization": 0.0,
-    "overhead_usd": 24633.11,
-    "profit_usd": 27096.43,
-    "grand_total_client": 298060.68,
+    "mobilization": 2400.0,
+    "overhead_usd": 24873.11,
+    "profit_usd": 27360.43,
+    "grand_total_client": 300964.68,
     "priced_supplier_lines": [
       {
         "category": "lumber",
@@ -244,9 +244,9 @@
     },
     "retainage_reference": {
       "retainage_percent": 10.0,
-      "typical_holdback_usd": 29806.07,
-      "grand_total_client": 298060.68,
-      "net_if_retainage_held_usd": 268254.61,
+      "typical_holdback_usd": 30096.47,
+      "grand_total_client": 300964.68,
+      "net_if_retainage_held_usd": 270868.21,
       "note": "Not deducted from grand total \u2014 typical GC holdback per KB."
     }
   }

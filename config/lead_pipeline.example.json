@@ -1,0 +1,19 @@
+{
+  "_comment": "Map YOUR CSV column headers to logical fields. Adjust filters for trade / geography / job size.",
+  "import_source_label": "planhub_csv",
+  "columns": {
+    "project_name": "Project Name",
+    "gc_name": "GC Company",
+    "gc_email": "Contact Email",
+    "phone": "Phone",
+    "state": "State",
+    "zip": "ZIP",
+    "trades": "Trade Scope",
+    "est_sf": "Est SF"
+  },
+  "filters": {
+    "min_sf": 5000,
+    "states_allowlist": ["NJ", "PA", "NY"],
+    "trade_keywords": ["fram", "drywall", "rough", "metal stud"]
+  }
+}

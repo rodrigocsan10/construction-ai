@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "document_title": "Internal estimate package",
+    "validity_days": 30,
+    "bid_mode": "internal_review",
+    "confidentiality": "client"
+  },
+  "company": {
+    "name": "Construction AI",
+    "address": "123 Builder Lane, Burlington, NJ 08075",
+    "phone": "(555) 010-0000",
+    "email": "estimating@example.com",
+    "logo_path": ""
+  },
+  "project": {
+    "name": "TEST B — Internal review / itemized (full detail + watermark)",
+    "owner": "Sample Owner LLC",
+    "gc": "Sample GC Inc."
+  },
+  "scope_paragraphs": [
+    "Same scope narrative as production bids; this PDF is formatted for estimator review.",
+    "Compare to Scenario A: line items and internal notes must appear here."
+  ],
+  "investment": {
+    "lump_sum": 512000.0,
+    "line_items": [
+      { "label": "Framing labor (loaded)", "amount": 198000 },
+      { "label": "Material package (lumber + sheathing)", "amount": 214000 },
+      { "label": "Equipment & mobilization allowance", "amount": 45000 },
+      { "label": "OH / profit", "amount": 55000 }
+    ]
+  },
+  "payment_schedule": [
+    { "label": "Contract execution / deposit", "pct": 10, "client_visible": true },
+    { "label": "Mobilization & material deposit", "pct": 25, "client_visible": true },
+    { "label": "Rough-in milestone", "pct": 25, "client_visible": true },
+    { "label": "Dry-in / sheathing complete", "pct": 15, "client_visible": true },
+    { "label": "Progress — interior partitions", "pct": 10, "client_visible": true },
+    { "label": "Punch & closeout reserve", "pct": 5, "client_visible": true },
+    { "label": "Final upon substantial completion", "pct": 10, "client_visible": true },
+    { "label": "Internal — ERP sync bucket (do not invoice)", "pct": 0, "client_visible": false }
+  ],
+  "tax": { "jurisdiction": "NJ" },
+  "assumptions": [
+    "Internal scenario: numbers are planning-grade until PM sign-off.",
+    "Verify against latest structural addendum before release to GC."
+  ],
+  "confidential_sections": {
+    "internal_notes": [
+      "Target margin 11.2%; do not share with GC.",
+      "Alternate ceiling: value-engineer sheathing if OSB acceptable per spec."
+    ]
+  }
+}

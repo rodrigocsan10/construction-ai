@@ -7,32 +7,32 @@
       "finish_per_sheet": 11.0,
       "labor_per_sheet_combined": 21.0,
       "vertical_carry_applied": false,
-      "mobilization_round_trip_miles": 80.0,
-      "mobilization_working_days": 45,
+      "mobilization_round_trip_miles": 0.0,
+      "mobilization_working_days": 0,
       "kb_extras_skipped": false,
       "markup_percent": 10.0,
       "tax_percent": 6.625,
       "tax_model_note": "Subcontract bundle: tax on (subtotal + markup), not materials-first ladder"
     },
     "summary_usd": {
-      "drywall_labor_sheets": 0.0,
-      "insulation": 0.0,
+      "drywall_labor_sheets": 11844.0,
+      "insulation": 31937.5,
       "vertical_carry": 0.0,
-      "kb_extras_fire_furr_lift": 0.0,
-      "mobilization": 1800.0,
-      "markup": 180.0,
-      "sales_tax": 131.18,
-      "grand_total": 2111.18
+      "kb_extras_fire_furr_lift": 7920.0,
+      "mobilization": 0.0,
+      "markup": 5170.15,
+      "sales_tax": 3767.75,
+      "grand_total": 60639.4
     },
     "summary_table": [
       {
         "line": "Hang + finish (per sheet) \u00d7 total sheets",
-        "detail": "0 @ $21.00/sheet",
-        "usd": 0.0
+        "detail": "564 @ $21.00/sheet",
+        "usd": 11844.0
       },
       {
         "line": "  (wall sheets)",
-        "detail": "0",
+        "detail": "564",
         "usd": ""
       },
       {
@@ -42,12 +42,12 @@
       },
       {
         "line": "Insulation (floor pricing)",
-        "detail": "FG SF 0 @ 1.25 + MW SF 0 @ 2.0",
-        "usd": 0.0
+        "detail": "FG SF 25550 @ 1.25 + MW SF 0 @ 2.0",
+        "usd": 31937.5
       },
       {
         "line": "Insulation order qty (est.)",
-        "detail": "wall batts 0; FG bags 0; MW bundles 0",
+        "detail": "wall batts 4228; FG bags 427; MW bundles 0",
         "usd": ""
       },
       {
@@ -57,8 +57,8 @@
       },
       {
         "line": "KB: fire caulking (est.)",
-        "detail": "\u2014",
-        "usd": ""
+        "detail": "fire-rated wall SF 17600.0",
+        "usd": 7920.0
       },
       {
         "line": "KB: furring / RC extra (est.)",
@@ -72,38 +72,55 @@
       },
       {
         "line": "Mobilization (KB formula)",
-        "detail": "80.0 RT mi \u00d7 $0.5 \u00d7 45 days",
-        "usd": 1800.0
+        "detail": "off",
+        "usd": ""
       },
       {
         "line": "Markup (10.0%)",
         "detail": "on sub total",
-        "usd": 180.0
+        "usd": 5170.15
       },
       {
         "line": "Sales tax",
         "detail": "6.625%",
-        "usd": 131.18
+        "usd": 3767.75
       },
       {
         "line": "GRAND TOTAL",
         "detail": "",
-        "usd": 2111.18
+        "usd": 60639.4
+      },
+      {
+        "line": "Retainage reference (10.0%)",
+        "detail": "Not deducted from grand total \u2014 typical GC holdback per KB.",
+        "usd": 6063.94
+      },
+      {
+        "line": "Net if retainage held (informational)",
+        "detail": "",
+        "usd": 54575.46
       }
-    ]
+    ],
+    "retainage_reference": {
+      "retainage_percent": 10.0,
+      "typical_holdback_usd": 6063.94,
+      "grand_total_client": 60639.4,
+      "net_if_retainage_held_usd": 54575.46,
+      "note": "Not deducted from grand total \u2014 typical GC holdback per KB."
+    }
   },
   "takeoff_totals": {
-    "gwb_wall_sf": 0.0,
+    "gwb_wall_sf": 20300.0,
     "ceiling_sf": 0.0,
-    "gwb_combined_sf": 0.0,
-    "insulation_sf": 0.0,
-    "insulation_wall_batt_pieces_est": 0,
-    "insulation_fiberglass_bags_est": 0,
+    "gwb_combined_sf": 20300.0,
+    "insulation_sf": 25550.0,
+    "insulation_wall_batt_pieces_est": 4228,
+    "insulation_fiberglass_bags_est": 427,
     "insulation_mineral_wool_bundles_est": 0,
     "insulation_ceiling_batt_pieces_est": 0,
-    "wall_sheet_count_est": 0,
+    "wall_sheet_count_est": 564,
     "ceiling_sheet_count_est": 0,
-    "total_sheet_count_est": 0,
-    "kb_optional_subtotal_usd": 0.0
+    "total_sheet_count_est": 564,
+    "kb_optional_subtotal_usd": 7920.0
   }
 }

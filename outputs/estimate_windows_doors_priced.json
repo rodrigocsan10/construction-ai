@@ -87,7 +87,22 @@
       {
         "line": "GRAND TOTAL (labor package)",
         "usd": 8376.0
+      },
+      {
+        "line": "Retainage reference (10.0%)",
+        "usd": 837.6
+      },
+      {
+        "line": "Net if retainage held (informational)",
+        "usd": 7538.4
       }
-    ]
+    ],
+    "retainage_reference": {
+      "retainage_percent": 10.0,
+      "typical_holdback_usd": 837.6,
+      "grand_total_client": 8376.0,
+      "net_if_retainage_held_usd": 7538.4,
+      "note": "Not deducted from grand total \u2014 typical GC holdback per KB."
+    }
   }
 }

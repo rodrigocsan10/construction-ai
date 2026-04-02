@@ -1,0 +1,26 @@
+{
+  "_comment": "Copy to integrations.json (gitignored) or set env vars — see docs/ROADMAP.md and README.md (Ops & growth section).",
+  "planhub": {
+    "enabled": false,
+    "api_base_url": "",
+    "api_key_env": "PLANHUB_API_KEY",
+    "notes": "Most teams export CSV from the portal — use scripts/lead_pipeline.py import (see config/lead_pipeline.example.json). API sync when vendor docs + key are available."
+  },
+  "crm": {
+    "enabled": true,
+    "local_sqlite": "data/crm/ops.sqlite3",
+    "webhook_url_env": "CRM_WEBHOOK_URL",
+    "notes": "scripts/crm_cli.py for local pipeline stages; scripts/crm_webhook.py POSTs JSON to Zapier / Airtable / internal API."
+  },
+  "email": {
+    "smtp_host_env": "SMTP_HOST",
+    "smtp_port_env": "SMTP_PORT",
+    "smtp_user_env": "SMTP_USER",
+    "smtp_password_env": "SMTP_PASSWORD",
+    "from_env": "PROPOSAL_FROM_EMAIL",
+    "notes": "scripts/email_proposal.py (attach file), scripts/render_outbound_email.py (CRM templates), scripts/email_sequence.py (multi-step drafts)"
+  },
+  "analytics": {
+    "ga4_notes": "Export Traffic acquisition CSV from GA4; scripts/analytics_ingest.py ga-csv. Link UTMs to leads via crm_cli utm or analytics_ingest lead-utm."
+  }
+}

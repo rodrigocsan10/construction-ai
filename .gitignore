@@ -1,5 +1,6 @@
 .venv/
 .env
+config/integrations.json
 __pycache__/
 *.py[cod]
 .DS_Store
@@ -8,3 +9,4 @@ __pycache__/
 data/*.pdf
 outputs/*.xlsx
 outputs/*.csv
+data/crm/*.sqlite3

@@ -50,6 +50,11 @@ def main() -> None:
     ap.add_argument("--drywall-mobilization-days", type=int, default=0)
     ap.add_argument("--with-windows", action="store_true", help="takeoff_windows_doors + price_windows_doors")
     ap.add_argument("--with-proposal", action="store_true", help="generate_proposal.py after estimates")
+    ap.add_argument(
+        "--proposal-pdf",
+        action="store_true",
+        help="With --with-proposal, also write outputs/proposal_draft.pdf (needs fpdf2)",
+    )
     ap.add_argument("--with-supplier-email", action="store_true", help="supplier_email.py after framing takeoff")
     args = ap.parse_args()
 
@@ -116,7 +121,10 @@ def main() -> None:
         run([_PY, str(_ROOT / "scripts" / "price_windows_doors.py")])
 
     if args.with_proposal:
-        run([_PY, str(_ROOT / "scripts" / "generate_proposal.py")])
+        gp = [_PY, str(_ROOT / "scripts" / "generate_proposal.py")]
+        if args.proposal_pdf:
+            gp.extend(["--pdf", str(_ROOT / "outputs" / "proposal_draft.pdf")])
+        run(gp)
 
 
 if __name__ == "__main__":

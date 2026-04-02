@@ -6,8 +6,14 @@ Please quote the following quantities (verify grade/spec on plans). Trusses / en
 
 ---
 
+[lumber] 1183 EA — 2x6x10 KD stud (verify grade/spec) | Note: From stud count for 2x6 wall types
+[lumber] 269 EA — 2x6x16 plate / sill (or cut from stock) | Note: Total plate LF ≈ 4290 (÷16' sticks)
+[lumber] 181 EA — 2x4x16 brace / let-in (per KB rule) | Note: 1 per 8 LF of wall (wood walls)
+[sheathing] 609 SHT — Wall sheathing 4x8 equiv (OSB/CDX/ZIP per spec) | Note: {'notes': 'ZIP sheathing for Rated Assemblies EW4, EW5 and similar; tape and roller are required for all ZIP joints', 'type': 'ZIP (for some walls), gypsum sheathing, polyiso rigid, CMU', 'zip_tape_required': True}
+[sheathing] 648 SHT — Roof deck 4x8 equiv | Note: From roof_deck_sf (AI estimate or lf-json)
 [prefab_engineered] 1 LOT — Truss / TJI / engineered floor package — formal supplier quote required | Note: Attach plans; KB: do not self-price trusses without shop drawings
-[fasteners] 0 BOX (4000) — Framing nails (8d common / per engineer) | Note: ~0 nails est
+[metal_studs] 600 LF wall — Metal stud/track system (order from supplier with gauge & depth) | Note: Stud count in takeoff JSON — convert to LF packages per supplier
+[fasteners] 7 BOX (4000) — Framing nails (8d common / per engineer) | Note: ~25550 nails est
 [headers] 25 EA opening — Header assumption: 2x8 or 2x10 | Note: Door A 3'-0" x 7'-0"
 [headers] 3 EA opening — Header assumption: 2x10 or 2x12 | Note: Door BB 6'-0" x 7'-0"
 [headers] 10 EA opening — Header assumption: 2x8 or 2x10 | Note: Door C 3'-0" x 7'-0"

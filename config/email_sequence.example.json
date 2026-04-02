@@ -1,0 +1,15 @@
+{
+  "_comment": "Used by scripts/email_sequence.py — paths relative to repo root.",
+  "steps": [
+    {
+      "name": "intro",
+      "template": "config/email_templates/introduction.txt",
+      "subject": "Bid interest — $project_name ($state)"
+    },
+    {
+      "name": "followup_7d",
+      "template": "config/email_templates/follow_up_7d.txt",
+      "subject": "Following up — $project_name"
+    }
+  ]
+}
